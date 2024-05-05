@@ -5,10 +5,50 @@
   font-weight: 300;
   font-style: normal;
 }
+
 .handlee-regular {
     font-family: "Handlee", cursive;
     font-weight: 400;
     font-style: normal;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.hGrid {
+    background-color: #00ccf7;
+    display: grid;
+    grid-template-columns: auto auto;
+    color: #FFFFFF;
+    justify-content: center;
+    font-family: handlee, sans-serif;
+}
+.hGrid img {
+    padding: 15px;
+    width: 90px;
+}
+
+nav {
+    background-color: #000000;
+    margin: 0px
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul a {
+    color: #b9b9b9;
+    text-decoration: none;
+    font-family: raleway;
 }
 
 main {
@@ -17,18 +57,45 @@ main {
     margin-right: auto;
 }
 
-.wrapper {
+.grid-container {
     display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.card {
+    outline:auto;
+    outline-color: #b9b9b9;
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #00ccf7;
+    padding: 10px;
 }
 .card ul {
     list-style-type: none;
 }
 
-section {
-    display: grid;
+.card p {
+    text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
+footer {
+    background-color: #00ccf7;
+    text-align: center;
+    color:#ffffff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+footer p {
+    padding: 5px;
+}
+
+footer #lastM {
+    color: #000000;
 }
   
