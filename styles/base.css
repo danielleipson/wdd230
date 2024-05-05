@@ -19,7 +19,7 @@ html, body {
 }
 
 .hGrid {
-    background-color: #00ccf7;
+    background-color: #095d6e;
     display: grid;
     grid-template-columns: auto auto;
     color: #FFFFFF;
