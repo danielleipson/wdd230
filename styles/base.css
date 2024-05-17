@@ -13,7 +13,7 @@
 }
 
 html, body {
-    margin: 0px;
+    margin: auto;
     padding: 0px;
     border: 0px;
 }
@@ -22,8 +22,9 @@ html, body {
     background-color: #095d6e;
     display: grid;
     grid-template-columns: auto auto;
-    color: #FFFFFF;
+    color: #ffffff;
     justify-content: center;
+    align-items:center;
     font-family: handlee, sans-serif;
 }
 .hGrid img {
@@ -31,28 +32,63 @@ html, body {
     width: 90px;
 }
 
+/* TOP Navigation */
+
 nav {
-    background-color: #000000;
-    margin: 0px
+    background-color:#E9d985;
 }
 
-nav ul {
-    text-align: center;
-    list-style-type: none;
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
 }
 
-nav ul li {
-    padding: 15px;
+#menu::before {
+	content: "☰";
 }
 
-nav ul a {
-    color: #b9b9b9;
-    text-decoration: none;
-    font-family: raleway;
+.navigation {
+    list-style:none;
+    margin:0 auto;
+    max-width:760px;
+    background-color:#E9d985;
 }
+.navigation li {
+    display:none;
+}
+
+.navigation a {
+	display: block;
+	padding: 1rem;
+	text-align: left;
+	text-decoration: none;
+	color: #000;
+    transition:0.5s;
+}
+.navigation a:hover {
+	background-color: #095d6e;
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.show li {
+	display: block;
+}
+#menu.open::before {
+	content: "✖️";
+}
+
+
+/* Main content of website */
 
 main {
-    max-width:972px;
+    max-width:720px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -60,31 +96,41 @@ main {
 .grid-container {
     display: grid;
     grid-template-columns: auto;
+    grid-gap:10px;
     justify-content: center;
 }
 
 .card {
-    outline:auto;
-    outline-color: #b9b9b9;
-    margin-bottom: 5px;
+    box-shadow: 0 5px 8px 1px #000000;
+    margin-bottom: 15px;
+    margin-top:10px;
+    border-radius:5px;
 }
 
 .card h3 {
     text-align: center;
-    color: #FFFFFF;
-    background-color: #00ccf7;
+    color: #000000;
+    background-color: #439A86;
     padding: 10px;
+    margin:auto;
+    border-radius:5px 5px 0px 0px;
 }
 .card ul {
     list-style-type: none;
+}
+.card ul li {
+    margin:10px;
 }
 
 .card p {
     text-align: center;
 }
+.card ul li a {
+    color: #000000;
+}
 
 footer {
-    background-color: #00ccf7;
+    background-color: #095D6E;
     text-align: center;
     color:#ffffff;
     padding: 5px;
@@ -96,6 +142,39 @@ footer p {
 }
 
 footer #lastM {
-    color: #000000;
+    color: #ffffff;
 }
   
+
+@media (min-width:760px) {
+    #menu {
+        display:none;
+    }
+    .navigation {
+        display:flex;
+		flex-direction: row;
+        background-color: #E9d985;
+
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+        color:#000000;
+	}
+    .navigation a {
+        text-align:center;
+    }
+	
+    .grid-container {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .left {
+        grid-column:1/4;
+    }
+    .right {
+        grid-column:4/6;
+    }
+    
+}

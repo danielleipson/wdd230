@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/dev_tools.css">
+</head>
+<body>
+    <header>
+        <h1>Chrome Dev Tools Presentation</h1>
+        <nav class="main_nav">
+            <ul>
+                <li><a href="dev_tool.html">Home</a></li>
+                <li><a href="console.html">Console</a></li>
+                <li><a href="elements.html">Elements</a></li>
+                <li><a href="css_overview.html">CSS Overview</a></li>
+                <li><a href="sources.html">Sources</a></li>
+                <li><a class="active" href="lighthouse.html">Lighthouse</a></li>
+                
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>What is Lighthouse and how does it work?</h2>
+            <p>Lighthouse is an automated tool for improving the quality of web pages. When you run it against your web page, it will audit for performance, accessibility, SEO, and more. </p>
+            <p>This image shows what it looks like when you first open Lighthouse. There are different options to choose from. </p>
+            <img src="images/lighthouse_report.png" alt="lighthouse report" width="75%"> 
+            <p> After running the audit, you can see how your website performs overall. This website is performing at 96%. 
+            </p>
+            <img src="images/lighthouse_run.png" alt="running lighthouse" width="75%"> 
+            <p> You can scroll down the report to see errors or things that could be improved that were found during the audit. They will be listed under the diagnostics section. This is an example below. </p>
+            <img src="images/lighthouse_diagnostics.png" alt="diagnostics" width="75%"> 
+            <p>As you continue to scroll to the botttom of the audit report, you can see a list of all of the audits. You can click each one individually to get more information about that specific audit.  </p>
+            <img src="images/lighthouse_audits.png" alt="audits" width="75%">
+            <p>Using Lighthouse helps you to build a user-friendly website that runs efficiently. 
+
+            </p>
+            
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="fullYear"></span></p>
+        <p>Danielle Ipson</p>
+        <p>Utah, USA</p>
+        <p id="lastM">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>

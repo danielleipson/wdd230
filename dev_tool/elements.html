@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/dev_tools.css">
+</head>
+<body>
+    <header>
+        <h1>Chrome Dev Tools Presentation</h1>
+        <nav class="main_nav">
+            <ul>
+                <li><a href="dev_tool.html">Home</a></li>
+                <li><a href="console.html">Console</a></li>
+                <li><a class="active" href="elements.html">Elements</a></li>
+                <li><a href="css_overview.html">CSS Overview</a></li>
+                <li><a href="sources.html">Sources</a></li>
+                <li><a href="lighthouse.html">Lighthouse</a></li>
+                
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>What does the Element panel do?</h2>
+            <p>The Elements panel provides an interface to inspect and manipulate the DOM and the CSS of your website. In the  main panel it shows the DOM layout of your HTML. This allows you to see the structure of your website and make sure that all of the elements are where they are supposed to be. You are able to visually see the parent and child relationships 
+            </p>
+            <img src="images/element_panel.png" alt="element panel" width="75%">
+            <p>You can see in this example that the body element is the descendant selector and the a-tag is the child selector.</p>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="fullYear"></span></p>
+        <p>Danielle Ipson</p>
+        <p>Utah, USA</p>
+        <p id="lastM">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/dev_tools.css">
+</head>
+<body>
+    <header>
+        <h1>Chrome Dev Tools Presentation</h1>
+        <nav class="main_nav">
+            <ul>
+                <li><a href="dev_tool.html">Home</a></li>
+                <li><a href="console.html">Console</a></li>
+                <li><a href="elements.html">Elements</a></li>
+                <li><a href="css_overview.html">CSS Overview</a></li>
+                <li><a class="active" href="sources.html">Sources</a></li>
+                <li><a href="lighthouse.html">Lighthouse</a></li>
+                
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>Source Panel Overview</h2>
+            <p>The source panel is very useful! It allows you to see the files/resources that the webpage has loaded. You are able to edit CSS and JavaScript. You can load your file into the editor and it can help you debug. 
+            </p>
+            <img src="images/live_editor.png" alt="live editor" width="75%">
+            <p>I don't have a file to upload into the live editor at the moment. However, the screenshot above shows where you can open a file. Once that file is open, you can start editing it. You can create a workspace to save the changes to your files. The workspace requires you to run a local HTTP web server.  If you do not make a workspace then the changes will be deleted once your page reloads. 
+
+            </p>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="fullYear"></span></p>
+        <p>Danielle Ipson</p>
+        <p>Utah, USA</p>
+        <p id="lastM">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
