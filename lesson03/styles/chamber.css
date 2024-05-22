@@ -194,6 +194,10 @@ header h3 {
 .raleway {
     font-family:"Raleway", sans-serif; 
 }
+img {
+    height: 100%;
+    weight: 100%;
+}
 h3 {
     text-align: center;
 }
