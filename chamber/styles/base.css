@@ -128,6 +128,7 @@ header h3 {
   }
   main h2 {
     font-family:"Open Sans", sans-serif; 
+    text-align: center;
   }
   .grid-container {
       display: grid;
@@ -165,43 +166,6 @@ header h3 {
   .card ul li a {
       color: #000000;
   }
-
-
-  .color-box{
-    height:40px;
-    margin:10px;
-    padding-top:15px;
-    padding-bottom:15px;
-    padding-right:10px;
-    padding-left:10px;
-    text-align:center;
-    border-radius:10px;
-  }
-  
-.FaluRed {
-    border-left:40px solid #6f1d1b;
-    color:black;
-}
-.Bistre {
-    border-left:40px solid #432818;
-    color:black;
-}
-.Lion {
-    border-left:40px solid #bb9457;
-    color:black;
-}
-.Peach {
-    border-left:40px solid #ffe6a7;
-    color:black;
-}
-.Brown {
-    border-left:40px solid #99582a;
-    color:black;
-}
-.Sage {
-    border-left:40px solid #c9cba3;
-    color:black;
-}
 
 .openSans {
     font-family:"Open Sans", sans-serif; 
