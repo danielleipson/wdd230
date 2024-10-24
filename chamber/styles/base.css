@@ -23,7 +23,7 @@ html, body {
 
 header {
     margin:auto;
-    background-color: #868383;
+    background-color: #5c5656;
     color: #ffe6a7;
   }
 header h1 {
@@ -266,7 +266,7 @@ h3 {
   }
 
 footer {
-    background-color: #868383;
+    background-color: #5c5656;
     text-align: center;
     color: #fff;
     padding: 5px;
