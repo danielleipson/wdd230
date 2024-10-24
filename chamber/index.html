@@ -23,6 +23,11 @@
 </head>
 <body>
     <header>
+        <img src="images/Hurricane-logo.png" alt="logo">
+        <label id="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
         <nav class="main_nav">
             <ul class="navigation">
                 <li><a class="active" href="chamber/index.html">Home</a></li>
@@ -58,24 +63,45 @@
                     </script>
                 </div>
             </section>
-            <section class="card" >
-                <h2>Business Spotlight</h2>
-                <p>Interstate Rock Products: Interstate Rock has proven their dedication to providing high-quality mateirials and unwavering support for the community. Their company strives to make Hurricane Valley a better place.</p>
-                <p>Hurricane Automotive and Repair: Hurricane Automotive and Repair is an honest shop to get your vehicles repaired. Their integrity and dedication to serving their customers shows in the quality of work they provide.</p>
-                <p>Coral Cliffs Cinema 8: Coral Cliffs Cinema has done wonders for the entertainment of our community. Their luxury seating is a nice treat after a long day of work. </p>
-            </section>
-        </div>      
-        
-        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25429.85767121318!2d-113.2986368!3d37.18283455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1715923656873!5m2!1sen!2sus" width="720" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+        </div>
+        <div class="business-container">
+            <h2>Business Spotlight</h2>
+                <section class="card" >
+                    <h3>Interstate Rock Products</h3>
+                    <p>Interstate Rock has proven their dedication to providing high-quality mateirials and unwavering support for the community. Their company strives to make Hurricane Valley a better place.</p>
+                    <p>(435) 635-2628</p>
+                    <a href="https://interstaterock.com/">Interstate Rock Products</a>
+                </section>
+                <section class="card" >
+                    <h3>Hurricane Auto Repair</h3>
+                    <p>Hurricane Automotive and Repair is an honest shop to get your vehicles repaired. Their integrity and dedication to serving their customers shows in the quality of work they provide.</p>
+                    <p>(435) 635-2889</p>
+                    <a href="https://www.facebook.com/p/Hurricane-Auto-Repair-100059616441397/">Hurricane Auto Repair</a>
+                </section>
+                <section class="card" >
+                    <h3>Coral Cliffs Cinema 8</h3>
+                    <p>Coral Cliffs Cinema has done wonders for the entertainment of our community. Their luxury seating is a nice treat after a long day of work. </p>
+                    <p>(435) 635 - 1484</p>
+                    <a href="https://www.coralcliffscinema8.com/home">Coral Cliffs Cinema 8</a>
+                </section>
+            </div>
     </main>
     <footer>
-        <p>&copy; <span id="fullYear"></span></p>
-        <p>Danielle Ipson</p>
-        <p>Utah, USA</p>
-        <p>Project for WDD230</p>
-        <p id="lastM">Last Modification: <span id="lastModified"></span></p>
+        <div class="footer-container">
+            <div>
+                <img src="images/Hurricane-logo.png" alt="logo">
+            </div>
+            <section>
+                <h3>Contact Information:</h3>
+                <p>Hurricane Valley Chamber of Commerce</p>
+                <p>63 South 100 West Hurricane, UT 84737</p>
+                <p>(435) 635-1111</p>
+            </section>
+        </div>
+        <p>&copy; <span id="fullYear"></span> | Danielle Ipson | Utah, USA | Project for WDD230 | Last Modification: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
 </body>
 </html>
