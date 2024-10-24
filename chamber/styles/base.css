@@ -286,10 +286,12 @@ footer #lastM {
     #menu {
         display:none;
     }
+    
     .navigation {
         display:flex;
         flex-direction: row;
         background-color: #6f1d1b;
+        font-size: 25px;
     }
   
     .navigation li {
@@ -319,6 +321,11 @@ footer #lastM {
         display: grid;
         grid-template-columns: 1fr 1fr ;
     }
+
+    footer p {
+        font-size: 18px;
+        margin: 2px;
+    }
     .card:nth-child(1) {
         grid-column: span 2; 
     }
@@ -336,6 +343,10 @@ footer #lastM {
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 2vh;
+        font-size: 3vh;
+    }
+
+    .hero-text p {
+        font-size: 18px;
     }
   }
