@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
-    <link rel="icon" href="favicon.ico">
     <meta name="description" content="Chamber of Commerce Site Plan">
     <meta name="author" content="Danielle Ipson">
-    <meta property="og:type" content="website">
+    <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Danielle Ipson - WDD 230 - Web Frontend Development">
-    <meta property="og:url" content="https://danielleipson.github.io/wdd230/chamber/">
+    <meta property="og:type" content="website">
     <meta property="og:image" content="https://cdn.greaterzion.com/wp-content/uploads/2019/03/18143804/hiking-500x500.png">
+    <meta property="og:url" content="https://danielleipson.github.io/wdd230/chamber/">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
 
@@ -24,10 +24,12 @@
 <body>
     <header>
         <img src="images/Hurricane-logo.png" alt="logo">
-        <label id="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
+        <div class="theme-switch-container">
+            <label id="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
         <nav class="main_nav">
             <ul class="navigation">
                 <li><a class="active" href="chamber/index.html">Home</a></li>

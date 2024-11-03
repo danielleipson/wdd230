@@ -21,7 +21,7 @@
 <body>
     <header>
         <div class="hGrid">
-            <img src="images/dani.JPG" alt="myself">
+            <img src="images/dani.webp" alt="myself">
             <h1>Danielle Ipson</h1>
         </div>
     </header>
@@ -37,8 +37,19 @@
         </ul>
     </nav>
     <main>
+        <div class="hero"> 
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/draper-temple-small.webp"> 
+                <source media="(max-width: 501px)" srcset= "images/draper-temple-2.webp">
+                <img src="images/draper-temple-2.webp" alt="Responsive image of Draper, UT temple.">
+            </picture>
+            <div class="herolabel">
+                <p>Draper Utah Temple</p>
+            </div>
+        </div>
+
         <h2>WDD 230: Web Frontend Development</h2>
-        <hr>
+
         <div  class="grid-container">
             <section class="card left">
                 <h3>Learning Activities</h3>
@@ -60,18 +71,18 @@
                     </li>
                     <li>Lesson 4: <a href="https://codepen.io/Danielle-Ipson/pen/OJKxQZN">Psuedo Class Fun</a></li>
                     <li>Lesson 5: <a href="https://danielleipson.github.io/wdd230/lesson05/bom.html">Book of Mormon Favorite Chapters</a></li>
-                    <li>Lesson 6: <a href="#"></a></li>
+                   <!---- <li>Lesson 6: <a href="#"></a></li>
                     <li>Lesson 7: <a href="#"></a></li>
                     <li>Lesson 8: <a href="#"></a></li>
                     <li>Lesson 9: <a href="#"></a></li>
-                    <li>Lesson 10: <a href="#"></a></li>
+                    <li>Lesson 10: <a href="#"></a></li> -->
                 </ul>
             </section>
             <section class="card right" >
                 <h3>Information</h3>
                 <p class="location">Utah, USA</p>
                 <p class="temp">[temp]</p>
-                <p class="visits">[page visits]</p>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
             </section>
         </div>  
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25429.85767121318!2d-113.2986368!3d37.18283455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1715923656873!5m2!1sen!2sus" width="720" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -83,5 +94,6 @@
         </footer>
         <script src="scripts/getdates.js"></script>
         <script src="scripts/menu.js"></script>
+        <script src="scripts/number-of-visits.js"></script>
     </body>
 </html>

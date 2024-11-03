@@ -91,10 +91,45 @@
   /* Main content of website */
   
   main {
-      max-width:720px;
+      max-width:960px;
       margin-left: auto;
       margin-right: auto;
   }
+
+  .hero {
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+  }
+
+  .hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family:"Great Vibes", serif;
+}
+ h2 {
+    text-align: center;
+ }
+
   
   .grid-container {
       display: grid;
@@ -131,6 +166,17 @@
   .card ul li a {
       color: #000000;
   }
+/*CSS for the # of visits*/
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+.visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
   
   footer {
       background-color: #095D6E;
@@ -181,3 +227,18 @@
       }
       
   }
+
+/*CSS for the # of visits
+  .label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+  
+  */
