@@ -193,6 +193,21 @@
   footer #lastM {
       color: #ffffff;
   }
+
+  /*CSS for the # of visits
+  .label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+  
+  */
     
   
   @media (min-width:760px) {
@@ -227,18 +242,3 @@
       }
       
   }
-
-/*CSS for the # of visits
-  .label {
-	font-family: Arial, sans-serif;
-	font-weight: 700;
-}
-
-#visits {
-	color: navy;
-	font-weight: bolder;
-	font-size: larger;
-}
-
-  
-  */

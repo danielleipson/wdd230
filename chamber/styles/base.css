@@ -185,7 +185,7 @@ nav {
 .hero-image {
     position:relative;
     height: 40vh;
-    background-image: url('/chamber/images/hurricane-utah.jpg');
+    background-image: url('/chamber/images/hurricane-valley.webp');
     background-size:cover;
     background-position:center;
     display:flex;
