@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
-    <link rel="icon" href="favicon.ico">
-    <meta name="description" content="Chamber of Commerce Site Plan">
-    <meta name="author" content="Danielle Ipson">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Danielle Ipson - WDD 230 - Web Frontend Development">
-    <meta property="og:url" content="https://danielleipson.github.io/wdd230/chamber/">
-    <meta property="og:image" content="https://cdn.greaterzion.com/wp-content/uploads/2019/03/18143804/hiking-500x500.png">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Image of the Draper UT Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
