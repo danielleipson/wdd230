@@ -29,8 +29,8 @@ nav {
     background: none;
     color: #000;
     position: absolute;
-    top: 2rem;
-    right: 0;
+    top: 50px;
+    right: 25px;
 }
   
 #menu::before {
@@ -69,29 +69,12 @@ nav {
     content: "✖️";
 }
 
-/*this is the dark mode switch*/
-/* The switch - the box around the slider */
-#switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    float:right;
-  }
-  
-  /* Hide default HTML checkbox */
-  #switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
   /* Default light theme */
   :root {
     --primary-color: #;
-    --secondary-color: #fff;
-    --text-color: #;
-    --background-color: #;
+    --secondary-color: ;
+    --text-color: #000;
+    --background-color: #fff;
     --heading-color: #;
     }
     
@@ -110,12 +93,13 @@ nav {
     color: var(--text-color);
     }
     
-    h1 {
-    color: var(--secondary-color);
-    }
-    
     a {
     color: var(--primary-color);
+    }
+
+    .hero-image button {
+        border-radius: 8px;
+        padding: 10px;
     }
     
     /* Slider styling */
@@ -127,7 +111,9 @@ nav {
   .theme-slider {
     display: inline-block;
     height: 34px;
-    position: relative;
+    position: absolute;
+    top: 15px;
+    right:15px;
     width: 60px;
     }
     
@@ -162,10 +148,6 @@ nav {
   
   input:checked + .slider {
     background-color: #6f1d1b;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #6f1d1b;
   }
   
   input:checked + .slider:before {
@@ -203,6 +185,8 @@ nav {
     color: white;
     font-size: 1.8vh;
 }
+
+
   
   /* Main content of website */
   
@@ -211,9 +195,8 @@ main {
     margin-left: auto;
     margin-right: auto;
     font-family:"Raleway", sans-serif; 
-    background-color:#fff;
-    color:#000;
 }
+
 main h2 {
     font-family:"Open Sans", sans-serif; 
     text-align: center;

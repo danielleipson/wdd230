@@ -23,13 +23,13 @@
 </head>
 <body>
     <header>
-        <img src="images/hv-logo.webp" alt="logo">
         <div class="theme-switch-container">
-            <label id="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
+            <label class="theme-slider" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="round slider"></div>
             </label>
         </div>
+        <img src="images/hv-logo.webp" alt="logo">
         <nav class="main_nav">
             <ul class="navigation">
                 <li><a class="active" href="chamber/index.html">Home</a></li>
@@ -57,6 +57,9 @@
             </section>
             <section class="card">
                 <h2>Local Weather</h2>
+                <hr>
+                <p><span id="windspeed">Windspeed: </span></p>
+                <p><span id="windchill">Wind Chill: </span></p>
                 <a class="weatherwidget-io" href="https://forecast7.com/en/37d18n113d29/hurricane/?unit=us" data-label_1="HURRICANE" data-label_2="WEATHER" data-icons="Climacons Animated" data-mode="Current" data-days="3" data-theme="weather_one" >HURRICANE WEATHER</a>
 
                 <div id="weatherWidget" class lang="en" style="display: block;">
