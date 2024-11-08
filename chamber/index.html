@@ -39,6 +39,11 @@
             </ul>
         </nav>
         <div class="hero-image"> 
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/Random-pic-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/Random-pic-medium.webp">
+                <img src="images/Random-pic-large.webp" alt="Random Image of people at a table" width="1500" height="750">
+            </picture>
             <div class="hero-text">
                 <h1>Hurricane Valley Chamber of Commerce</h1>
                 <p>Uniting businesses towards future success.</p>
@@ -58,9 +63,9 @@
             <section class="card">
                 <h2>Local Weather</h2>
                 <hr>
+                <a class="weatherwidget-io" href="https://forecast7.com/en/37d18n113d29/hurricane/?unit=us" data-label_1="HURRICANE" data-label_2="WEATHER" data-icons="Climacons Animated" data-mode="Current" data-days="3" data-theme="weather_one" >HURRICANE WEATHER</a>
                 <p><span id="windspeed">Windspeed: </span></p>
                 <p><span id="windchill">Wind Chill: </span></p>
-                <a class="weatherwidget-io" href="https://forecast7.com/en/37d18n113d29/hurricane/?unit=us" data-label_1="HURRICANE" data-label_2="WEATHER" data-icons="Climacons Animated" data-mode="Current" data-days="3" data-theme="weather_one" >HURRICANE WEATHER</a>
 
                 <div id="weatherWidget" class lang="en" style="display: block;">
                     <script>

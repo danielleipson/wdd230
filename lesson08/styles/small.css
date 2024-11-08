@@ -1,8 +1,12 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+    -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; }
 
 
 /*----------- BODY --------------*/
@@ -17,8 +21,13 @@ header {
     padding: .5rem 2%;
     background-color: #ddd;
 }
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
+header h1 {
+    margin: 0;
+}
+header h2 {
+    margin: 0; 
+    font-weight: normal;
+}
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -29,7 +38,9 @@ nav ul {
     padding: 0;
     margin: 0;
 }
-nav ul li {border-bottom: solid 1px #333;}
+nav ul li {
+    border-bottom: solid 1px #333;
+}
 nav ul li a {
     display: block;
     background-color: #444;
@@ -64,7 +75,7 @@ main {
 .wf1 label {
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: #6f200e;
     font-size: .9rem;
 }
 
@@ -73,15 +84,13 @@ main {
     color: #445ba9;
     font-size: .9rem;
 }
-
+.wf1 input[type="text"],
 .wf1 input[type="tel"],
 .wf1 input[type="email"],
 .wf1 input[type="url"],
 .wf1 input[type="date"],
 .wf1 select,
-.wf1 input[type="number"],
-.wf1 input[type="text"]
-{
+.wf1 input[type="number"]{
     background-color: #eee;
     display: block;
     border: solid 1px #999;
@@ -111,11 +120,11 @@ main {
 }
 
 .wf1 input:required {
-    border-right: solid 8px red;
+    border-bottom: solid 8px #6f200e;
 }
 
 .wf1 input:required:valid {
-    border-right: solid 8px green;
+    border-bottom: solid 8px green;
 }
 
 

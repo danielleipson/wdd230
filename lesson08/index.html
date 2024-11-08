@@ -29,7 +29,7 @@
 <body>
 <!-- HEADER HERE -->
 	<header>
- <h1>Course Proposal</h1>
+        <h1>Course Proposal</h1>
         <h2>Designing Web Forms</h2>
     </header>
     
@@ -51,12 +51,13 @@
         <form method="get" action="thanks.html" class="wf1">
             <fieldset>
                 <legend>Applicant Information</legend>
-                <label>First Name*<input type="text" name="fname" required></label>
-                <label>Last Name*<input type="text" name="lname" required></label>
-                <label>Phone<input type="tel" name="phone"placeholder="1235551234"></label>
-                <label>Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label>First Name * <input type="text" name="fname" required></label>
+                <label>Last Name * <input type="text" name="lname" required></label>
+                <label>Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+                <label>Email * <input type="email" name="email" placeholder="someone@gmail.com" required></label>
                 <label>Website<input type="url" name="url" placeholder="http://"></label>
             </fieldset>
+
             <fieldset>
                 <legend>Course Information</legend>
                 <div>Audiance</div>
@@ -66,10 +67,9 @@
 
                 <div>Software Needed</div>
                 <label><input type="checkbox" name="editing" value="yes">Photo Editing</label>
-                <label><input type="checkbox" name="editing" value="yes">Coding</label>
-                <label><input type="checkbox" name="editing" value="yes">PreProcessor</label>
-                <label><input type="checkbox" name="editing" value="yes">FTP Cliet</label>
-                
+                <label><input type="checkbox" name="coding" value="yes">Coding</label>
+                <label><input type="checkbox" name="process" value="yes">PreProcessor</label>
+                <label><input type="checkbox" name="client" value="yes">FTP Cliet</label>
             </fieldset>
 
             <fieldset>
@@ -83,9 +83,9 @@
                         <option value="information">Information Technology</option>
                         <option value="data">Data Professional</option>
                         <option value="construction">Construction</option>
-                        <option value="manufacturiing">Manufacturiing</option>
+                        <option value="manufacturiing">Manufacturing</option>
                         <option value="business">Business Professional</option>
-                        <option value="cyber">Cyber Security</option>
+                        <option value="security">Cyber Security</option>
                     </select>
                 </label>
 
@@ -97,8 +97,6 @@
             <input type="submit" value="Propose My Course">
         
         </form>
-
-          
         
     </main>
     
