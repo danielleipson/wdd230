@@ -2,7 +2,7 @@ async function getCurrentWeather() {
     const weatherContainer = document.getElementById("weather-info");
 
     try{
-        const observationResponse = await fetch('https://api.weather.gov/stations/KSGU/observations/latest');
+        const observationResponse = await fetch(`https://api.weather.gov/stations/KSGU/observations/latest`);
         const observationData = await observationResponse.json();
         const observation = observationData.properties;
 
@@ -24,7 +24,8 @@ async function getCurrentWeather() {
         weatherContainer.innerHTML = `
         <h4>${observation.textDescription}</h4>
         <p>Temperature: ${temperatureF}°F</p>
-        ${windSpeedMph !== null ? `<p>Wind: ${windSpeedMph} mph</p>` : `<p>Wind data not available.</p>`} ${windChill ? `<p>Wind Chill: ${windChill}°F</p>` : `<p>Wind chill not applicable.</p>`}
+        ${windSpeedMph !== null ? `<p>Wind: ${windSpeedMph} mph</p>` : '<p>Wind data not available.</p>'} 
+        ${windChill ? `<p>Wind Chill: ${windChill}°F</p>` : '<p>Wind chill not applicable.</p>'}
         `;
     } catch (error) {
         weatherContainer.innerHTML = '<p>Failed to load weather data.</p>';
