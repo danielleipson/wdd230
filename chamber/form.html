@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Ipson - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Danielle Ipson, course assignment portal">
+    <meta name="author" content="Danielle Ipson">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Danielle Ipson - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.greaterzion.com/wp-content/uploads/2019/03/18143804/hiking-500x500.png">
+    <meta property="og:url" content="https://danielleipson.github.io/wdd230/index.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <header>
+        <div class="hGrid">
+            <img src="images/dani.webp" alt="myself">
+            <h1>Danielle Ipson</h1>
+        </div>
+    </header>
+
+    <button id="menu"></button>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/9?lang=eng&id=p39#p39" target="_blank" >Scripture</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main class="form-main">
+        <div class="formWrapper">
+            <div id="formmessage"></div>
+            <h1>Create an Account</h1>
+            <form action="record.html" method="GET" class="form1">
+                <label>Username*<input type="text" id="username" name="username" required></label>
+                <label>Password* <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}"></label>
+                <label>Confirm Password* <input type="password" id="confirm" name="confirm" required pattern="[A-Za-z0-9]{8,}"></label>
+                <label>Email* <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="A valid byui.edu email address."></label>
+                <label>Page Rating <input type="range" id="rating" name="rating" min="1" max="10" step="1"></label>
+                <div id="rangevalue">6</div>
+                <input type="submit" id="formButton" value="Create Account">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/page-visit.js"></script>
+    <script src="scripts/confirmpass.js"></script>
+    <script src="scripts/range.js"></script>
+</body>
+
+</html>

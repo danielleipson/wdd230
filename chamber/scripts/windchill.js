@@ -1,39 +1,35 @@
-async function getWeather() {
-    let response = await fetch('https://api.weather.gov/gridpoints/PIH/121,70/forecast/hourly');
-    let data = await response.json();
-    return data
+async function getCurrentWeather() {
+    const weatherContainer = document.getElementById("weather-info");
+
+    try{
+        const observationResponse = await fetch('https://api.weather.gov/stations/KSGU/observations/latest');
+        const observationData = await observationResponse.json();
+        const observation = observationData.properties;
+
+        console.log('Observation data:', observation);
+
+        const temperatureF = (observation.temperature.value * 9/5 + 32).toFixed(1);
+        let windSpeedMph = null;
+        if (observation.windSpeed && observation.windSpeed.value !== null) {
+            windSpeedMph = (observation.windspeed.value * 0.621371).toFixed(1);
+            console.log('Wind  speed (mph):', windSpeedMph);
+        } else {
+            console.log('Wind speed date not available.');
+        }
+
+        const windChill = windSpeedMph !== null ? calculateWindChill(temperatureF, windSpeedMph) : null;
+        console.log('Wind chill:', windChill);
+
+        //Display current weather information
+        weatherContainer.innerHTML = `
+        <h4>${observation.textDescription}</h4>
+        <p>Temperature: ${temperatureF}°F</p>
+        ${windSpeedMph !== null ? `<p>Wind: ${windSpeedMph} mph</p>` : `<p>Wind data not available.</p>`} ${windChill ? `<p>Wind Chill: ${windChill}°F</p>` : `<p>Wind chill not applicable.</p>`}
+        `;
+    } catch (error) {
+        weatherContainer.innerHTML = '<p>Failed to load weather data.</p>';
+        console.error('Error fetching weather data:', error);
+    }
 }
 
-
-let temp = 0;
-let windSpeed = ''
-
-
-getWeather().then(data => {
-    info = data.properties.periods[0]
-    console.log(data.properties.periods[0])
-    let windChill = '';
-
-    temp = info.temperature;
-    windSpeed = info.windSpeed;
-
-    let numberPattern = /\d+/g;
-    let actualWindSpeed = windSpeed.match(numberPattern);
-    console.log(actualWindSpeed)
-    windSpeed = actualWindSpeed[0];
-
-    const docuTemp = document.querySelector('#temp')
-    const docuWind = document.querySelector('#windspeed')
-    const docuChill = document.querySelector('#windchill')
-
-    docuTemp.innerHTML = `Temperature: ${temp}°F`
-    docuWind.innerHTML = `Wind: ${windSpeed} mph`
-
-    if (temp <= 50 && windSpeed > 3) {
-        windChill = (35.74 + 0.6215 * temp - 35.75(windSpeed ^ 0.16) + 0.4275 * temp * (windSpeed ^ 0.16))
-        docuChill.innerHTML = `Windchill: ${windChill} degrees`
-    } else {
-        docuChill.innerHTML = 'Windchill: N/A'
-    }
-
-});
+getCurrentWeather();

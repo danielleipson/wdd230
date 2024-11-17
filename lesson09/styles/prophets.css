@@ -1,0 +1,33 @@
+#cards {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color:#010100;
+}
+
+section {
+    background-color: #5ba4c4;
+    border: 1px solid black;
+}
+
+img {
+    margin: 7%;
+    box-shadow: 6px 7px 10px #000000;
+}
+
+p {
+    text-align: center;
+    color: rgb(251, 249, 249);
+}
+
+footer {
+    text-align: center;
+}

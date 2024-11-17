@@ -55,22 +55,19 @@
     <main>
         <div  class="grid-container">
             <section class="card">
-                <h2>Events</h2>
-                <p>October 14th @ 12pm - 1pm - Hurricane Valley Chamber of Commerce - October Luncheon Meeting.</p>
-                <p>October 17th @ 9am - 11 am - Walk to end Alzheimer's </p>
-                <p>October 19th @ 6pm - Dinner, Auction, and Music to benefit BAM.</p>
+                <h3>Events</h3>
+                <article>
+                    <p>October 14th @ 12pm - 1pm - Hurricane Valley Chamber of Commerce - October Luncheon Meeting.</p>
+                    <p>October 17th @ 9am - 11 am - Walk to end Alzheimer's </p>
+                    <p>October 19th @ 6pm - Dinner, Auction, and Music to benefit BAM.</p>
+                </article>
             </section>
             <section class="card">
-                <h2>Local Weather</h2>
-                <hr>
-                <a class="weatherwidget-io" href="https://forecast7.com/en/37d18n113d29/hurricane/?unit=us" data-label_1="HURRICANE" data-label_2="WEATHER" data-icons="Climacons Animated" data-mode="Current" data-days="3" data-theme="weather_one" >HURRICANE WEATHER</a>
-                <p><span id="windspeed">Windspeed: </span></p>
-                <p><span id="windchill">Wind Chill: </span></p>
-
-                <div id="weatherWidget" class lang="en" style="display: block;">
-                    <script>
-                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-                    </script>
+                <div class="weather-container"></div>
+                    <h3>Local Weather</h3>
+                    <div id="weather-info">
+                        <p>Loading weather data...</p>
+                    </div>
                 </div>
             </section>
         </div>
@@ -78,21 +75,27 @@
             <h2>Business Spotlight</h2>
                 <section class="card" >
                     <h3>Interstate Rock Products</h3>
-                    <p>Interstate Rock has proven their dedication to providing high-quality mateirials and unwavering support for the community. Their company strives to make Hurricane Valley a better place.</p>
-                    <p>(435) 635-2628</p>
-                    <a href="https://interstaterock.com/">Interstate Rock Products</a>
+                    <article>
+                        <p>Interstate Rock has proven their dedication to providing high-quality mateirials and unwavering support for the community. Their company strives to make Hurricane Valley a better place.</p>
+                        <p>(435) 635-2628</p>
+                        <a href="https://interstaterock.com/">Interstate Rock Products</a>
+                    </article>
                 </section>
                 <section class="card" >
                     <h3>Hurricane Auto Repair</h3>
-                    <p>Hurricane Automotive and Repair is an honest shop to get your vehicles repaired. Their integrity and dedication to serving their customers shows in the quality of work they provide.</p>
-                    <p>(435) 635-2889</p>
-                    <a href="https://www.facebook.com/p/Hurricane-Auto-Repair-100059616441397/">Hurricane Auto Repair</a>
+                    <article>
+                        <p>Hurricane Automotive and Repair is an honest shop to get your vehicles repaired. Their integrity and dedication to serving their customers shows in the quality of work they provide.</p>
+                        <p>(435) 635-2889</p>
+                        <a href="https://www.facebook.com/p/Hurricane-Auto-Repair-100059616441397/">Hurricane Auto Repair</a>
+                    </article>
                 </section>
                 <section class="card" >
                     <h3>Coral Cliffs Cinema 8</h3>
-                    <p>Coral Cliffs Cinema has done wonders for the entertainment of our community. Their luxury seating is a nice treat after a long day of work. </p>
-                    <p>(435) 635 - 1484</p>
-                    <a href="https://www.coralcliffscinema8.com/home">Coral Cliffs Cinema 8</a>
+                    <article>
+                        <p>Coral Cliffs Cinema has done wonders for the entertainment of our community. Their luxury seating is a nice treat after a long day of work. </p>
+                        <p>(435) 635 - 1484</p>
+                        <a href="https://www.coralcliffscinema8.com/home">Coral Cliffs Cinema 8</a>
+                    </article>
                 </section>
             </div>
     </main>
@@ -115,6 +118,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="windchill.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
+
