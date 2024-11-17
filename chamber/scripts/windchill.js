@@ -1,3 +1,17 @@
+function calculateWindChill(tempF, windSpeedMPH) {
+    console.log(`Calculating wind chill for temp: ${tempF}°F, wind speed: ${windSpeedMPH} mph`);
+    if (tempF <=50 && windSpeedMPH >= 3) {
+        return (
+            35.74 +
+            0.6215 * tempF -
+            35.75 * Math.pow(windSpeedMph, 0.16)
+        ).toFixed(1);
+    } else {
+        console.log("wind chill calculation not applicable");
+        return null;
+    }
+}
+
 async function getCurrentWeather() {
     const weatherContainer = document.getElementById("weather-info");
 
