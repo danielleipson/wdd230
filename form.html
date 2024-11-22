@@ -44,12 +44,27 @@
             <h1>Create an Account</h1>
             <form action="record.html" method="GET" class="form1">
                 <label>Username*<input type="text" id="username" name="username" required></label>
-                <label>Password* <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}"></label>
-                <label>Confirm Password* <input type="password" id="confirm" name="confirm" required pattern="[A-Za-z0-9]{8,}"></label>
-                <label>Email* <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="A valid byui.edu email address."></label>
-                <label>Page Rating <input type="range" id="rating" name="rating" min="1" max="10" step="1"></label>
-                <div id="rangevalue">6</div>
-                <input type="submit" id="formButton" value="Create Account">
+                <label>Password* <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{7,}"></label>
+                <label>Confirm Password* <input type="password" id="confirm" name="confirm" required pattern="[A-Za-z0-9]{7,}"></label>
+                <label>Email* <input type="email" id="email" name="email" title="A valid byui.edu email address."
+                    placeholder="someone@byui.edu" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+                <label for="r">Page Rating</lable> 
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                <button id="btnSubmit" type="submit">Send Feedback</button>
             </form>
         </div>
     </main>
@@ -58,11 +73,8 @@
         <p id="copyright"></p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getdates.js"></script>
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/page-visit.js"></script>
-    <script src="scripts/confirmpass.js"></script>
-    <script src="scripts/range.js"></script>
+    <script src="scripts/forms.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>
