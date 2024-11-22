@@ -381,6 +381,43 @@ body{
     padding: 10px;
 }
 
+.grid {
+    display: grid;
+    grid-gap: 15px;
+    justify-content: center;
+    grid-template-columns: 300px 500px;
+    text-align: center;
+}
+
+aside, nav, section {
+  border: solid 1px;
+}
+
+section {
+  margin-top: 15px;
+}
+
+ .sidebar {
+    height: 300px;
+}
+
+.sidebar-section2 {
+    height: 200px;
+}
+
+.section3 {
+    height: 300px;
+}
+
+.sidebar-section4 {
+    height: 100px;
+}
+
+.section5 {
+    height: 300px;
+}
+
+
 footer {
     background-color: #5c5656;
     text-align: center;

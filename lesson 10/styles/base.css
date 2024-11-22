@@ -1,0 +1,33 @@
+header {
+    background-color: lightgray;
+}
+header h1 {
+    padding: 50px;
+    text-align: center;
+}
+main {
+    margin: auto;
+    max-width: 960px;
+}
+.card {
+    box-shadow: 0 5px 8px 1px #000;
+    background-color: #c9cba3;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    padding-bottom: 10px;
+}
+.card h3 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+foot {
+    height: 200px;
+    padding: 10px;
+    margin-top: 25px;
+    background-color: lightgray;
+}

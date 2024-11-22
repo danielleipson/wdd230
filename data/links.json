@@ -1,36 +1,122 @@
-const baseURL = "https://danielleipson.github.io/wdd230/";
-const linksURL = "https://danielleipson.github.io/wdd230/data/links.js";
-//const activities = document.querySelector('#activities');
-
-async function getLinks() {
-    const response = await fetch(linksURL);
-    const data = await response.json();
-    // console.table(data);
-    displayLinks(data.lessons)
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "https://danielleipson.github.io/wdd230/holygrail.html",
+                    "title": "Holy Grail"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "https://danielleipson.github.io/wdd230/lesson02/media-query.html",
+                    "title": "Media Queries"
+                },
+                {
+                    "url": "https://danielleipson.github.io/wdd230/lesson02/design-principles.html",
+                    "title": "Design Principles"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "https://codepen.io/Danielle-Ipson/pen/MWdaPJR",
+                    "title": "Psuedo-Element"
+                },
+                {
+                    "url": "images/combinators_exercise.png",
+                    "title": "CSS Combinators Exercises"
+                },
+                {
+                    "url": "https://codepen.io/Danielle-Ipson/pen/KKLdGo",
+                    "title": " Responsive Hamburger Menu"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/Danielle-Ipson/pen/OJKxQZN",
+                    "title": "Pseudo-class Fun"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "https://danielleipson.github.io/wdd230/lesson05/bom.html",
+                    "title": "Book of Mormon Favorite Chapters"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "https://danielleipson.github.io/wdd230/lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "https://danielleipson.github.io/wdd230/lesson07/lazyload.html",
+                    "title": "Lazy Load Images"
+                },
+                {
+                    "url": "https://danielleipson.github.io/wdd230/lesson07/bom.html",
+                    "title": "BOM Local Storage"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "https://danielleipson.github.io/wdd230/lesson08/tablebuild.htm",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "https://danielleipson.github.io/wdd230/lesson08/index.html",
+                    "title": "HTML Forms"
+                },
+                {
+                    "url": "https://danielleipson.github.io/wdd230/form.html",
+                    "title": "Form Build"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "https://danielleipson.github.io/wdd230/lesson09/new-ward-members.json",
+                    "title": "JSON File"
+                },
+                {
+                    "url": "https://danielleipson.github.io/wdd230/lesson09/prophets.htm",
+                    "title": "Latter-Day Prophets"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "https://danielleipson.github.io/wdd230/lesson10/weather.htm",
+                    "title": "Weather API"
+                }
+            ]
+        }
+    ]
 }
-
-getLinks();
-
-const displayLinks = (weeks) => {
-    weeks.forEach((week) => {
-        const list = document.createElement('li');
-        const lesson = week.lesson;
-        const links = week.links;
-        counter = 1;
-        list.textContent = `Week ${lesson}: `
-        links.forEach((link) => {
-            const url = link.url;
-            const title = link.title;
-
-            list.innerHTML += `<a href=${url}>${title}</a>`
-            counter += 1;
-            if (counter <= links.length) {
-                list.innerHTML += " | "
-          }
-      });
-      // console.log(list)
-      activities.appendChild(list);
-  });
-
-}
-getLinks();

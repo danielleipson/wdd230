@@ -27,9 +27,14 @@ function displayResults(data) {
     currentTemp.innerHTML = `${math.floor(data.main.temp)}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
+    let words = desc.split (" ");
+    for (let i= 0; i< words.length; i++) {
+        words[i] = words [i][0].toUpperCase() + words[i].substr(1);
+    }
+    let description = words.join(" ");
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = `${desc}`;
+    weatherIcon.setAttribute('alt', description);
+    captionDesc.textContent = `${description}`;
 }
 
 apiFetch();

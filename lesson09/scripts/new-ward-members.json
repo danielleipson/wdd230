@@ -1,0 +1,74 @@
+{
+    "wardInfomration": {
+        "familyName": "Mecham",
+        "moveInDate": "1975-10-05",
+        "numberOfPeople": "13",
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Susan Mecham",
+                "gender": "Female",
+                "birthdate": "1954-01-19"
+            },
+            {
+                "name": "David Mecham",
+                "gender": "Male",
+                "birthdate": "1952-12-19"
+            },
+            {
+                "name": "Brian Mecham",
+                "gender": "Male",
+                "birthdate": "1968-06-30"
+            },
+            {
+                "name": "Jodi Mecham",
+                "gender": "Female",
+                "birthdate": "1970-04-30"
+            },
+            {
+                "name": "Jesse Mecham",
+                "gender": "Male",
+                "birthdate": "1972-5-13"
+            },
+            {
+                "name": "Stacy Mecham",
+                "gender": "Female",
+                "birthdate": "1974-07-19"
+            },
+            {
+                "name": "Angela Mecham",
+                "gender": "Female",
+                "birthdate": "1977-08-21"
+            },
+            {
+                "name": "Matthew Mecham",
+                "gender": "Male",
+                "birthdate": "1979-02-09"
+            },
+            {
+                "name": "Jeffrey Mecham",
+                "gender": "Male",
+                "birthdate": "1982-10-20"
+            },
+            {
+                "name": "Bradley Mecham",
+                "gender": "Male",
+                "birthdate": "1982-10-20"
+            },
+            {
+                "name": "Samantha Mecham",
+                "gender": "Female",
+                "birthdate": "1985-09-15"
+            },
+            {
+                "name": "Adrianna Mecham",
+                "gender": "Female",
+                "birthdate": "1987-12-31"
+            },
+            {
+                "name": "Erin Mecham",
+                "gender": "Female",
+                "birthdate": "1989-10-05"
+            }
+        ]
+    }}

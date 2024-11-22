@@ -16,6 +16,9 @@
     <meta property="og:url" content="https://danielleipson.github.io/wdd230/chamber/">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
 
 
     <title>Hurricane Chamber of Commerce Join Page</title>
@@ -47,7 +50,47 @@
         </div>
         <button id="menu"></button>
     </header>
-    <main>
+    <main id="join-main">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>
+                    Application Information
+                </legend>
+                <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label>Title or Position <input type="text" id="title" name="title" required></label>
+                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" id="email"
+                        required></label>
+                <label>Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+            </fieldset>
+            <fieldset>
+                <label>Organization* <input type="text" name="organization" id="organization"
+                        required></label>
+                <label>Membership Level
+                    <select name="membership">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="np">NP Membership is for non profit organizations and there is no fee.</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silve">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label>Description<textarea name="description" id="description" required></textarea></label>
+                <input type="hidden" name="timestamp" id="timestamp">
+            </fieldset>
+            <fieldset>
+                <legend>Ready?</legend>
+                <input class="submitBtn" type="submit" value="Join Chamber!">
+            </fieldset>
+        </form>
+        <div>
+            <h3>Benefits of Joining Us!</h3>
+            <ul>
+                <li>Connect to an spetacular, broad and smart community.</li>
+                <li>Be updated and have special access to the best events happening in the city!</li>
+                <li>Receive training on how to build partnerships with other members of your own industry.</li>
+            </ul>
+        </div>
     </main>
     <footer>
         <div class="footer-container">
@@ -67,7 +110,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/darkmode.js"></script>
-    <script src="windchill.js"></script>
+    <script src="scripts/forms.js"></script>
 </body>
 </html>
