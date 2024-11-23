@@ -144,7 +144,12 @@
       margin-top:10px;
       border-radius:5px;
   }
-  
+  .weather-container {
+      margin-bottom: 15px;
+      margin-top:10px;
+      border-radius:5px;
+      text-align: center;
+  }
   .card h3 {
       text-align: center;
       color: #000000;
@@ -193,21 +198,6 @@
   footer #lastM {
       color: #ffffff;
   }
-
-  /*CSS for the # of visits
-  .label {
-	font-family: Arial, sans-serif;
-	font-weight: 700;
-}
-
-#visits {
-	color: navy;
-	font-weight: bolder;
-	font-size: larger;
-}
-
-  
-  */
     
   
   @media (min-width:760px) {
