@@ -1,5 +1,5 @@
 const baseUrl = "https://danielleipson.github.io/wdd230/"
-const linksUrl = "https://danielleipson.github.io/wdd230/data/links.json"
+const linksUrl = "data/links.json"
 
 async function getLinks() {
     const links = await fetch(linksUrl);
@@ -20,7 +20,7 @@ function displayLinks(weeks) {
             const weekMultiple = document.createElement("span");
             weekMultiple.textContent = `Week ${week.lesson}: `;
             list.appendChild(weekMultiple);
-            weekMultiple.style.color = "white";
+            weekMultiple.style.color = "black";
 
             week.links.forEach((activity, index) => {
 

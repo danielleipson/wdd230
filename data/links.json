@@ -83,7 +83,7 @@
             "lesson": "08",
             "links": [
                 {
-                    "url": "https://danielleipson.github.io/wdd230/lesson08/tablebuild.htm",
+                    "url": "https://danielleipson.github.io/wdd230/lesson08/tablebuild.html",
                     "title": "Table Build"
                 },
                 {
@@ -104,7 +104,7 @@
                     "title": "JSON File"
                 },
                 {
-                    "url": "https://danielleipson.github.io/wdd230/lesson09/prophets.htm",
+                    "url": "https://danielleipson.github.io/wdd230/lesson09/prophets.html",
                     "title": "Latter-Day Prophets"
                 }
             ]
@@ -113,7 +113,7 @@
             "lesson": "10",
             "links": [
                 {
-                    "url": "https://danielleipson.github.io/wdd230/lesson10/weather.htm",
+                    "url": "https://danielleipson.github.io/wdd230/lesson10/weather.html",
                     "title": "Weather API"
                 }
             ]
