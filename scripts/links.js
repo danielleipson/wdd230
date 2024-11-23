@@ -47,8 +47,4 @@ function displayLinks(weeks) {
     });
 }
 
-/**
- * li
- *  <a>Activity 1</a> | <a>Activity 2</a>
- */
 getLinks()
