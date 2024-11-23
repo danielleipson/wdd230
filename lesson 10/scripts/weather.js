@@ -1,16 +1,16 @@
-const latitude = 37.1753;
-const longitude = -113.2899;
+const latitude = 6.64;
+const longitude = 49.75;
 const apiKey = '9508730b12a2fe9ec19f307b79beb2ab';
 
-const currentTemp = documennnt.querySelector('#current-temp');
-const weatherIcon = documennnt.querySelector('#weather-icon');
-const captionDesc = documennnt.querySelector('#figcaption');
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&apppid=${apiKey}&units=imperial`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 
 async function apiFetch() {
     try {
-        const  response = await fetch(url);
+        const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
             console.log(data);
@@ -24,11 +24,11 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${math.floor(data.main.temp)}&deg;F`;
+    currentTemp.innerHTML = `${Math.floor(data.main.temp)}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     let words = desc.split (" ");
-    for (let i= 0; i< words.length; i++) {
+    for (let i = 0; i < words.length; i++) {
         words[i] = words [i][0].toUpperCase() + words[i].substr(1);
     }
     let description = words.join(" ");
