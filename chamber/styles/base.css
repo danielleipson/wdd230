@@ -512,7 +512,7 @@ footer #lastM {
 #join-main input[type="text"],
 #join-main input[type="email"],
 #join-main select,
-#join-main input[type="number"],
+#join-main input[type="tel"],
 #join-main input[type="password"] {
     display: block;
     border-radius: 5px;
