@@ -381,6 +381,33 @@ body{
     padding: 10px;
 }
 
+#description {
+    margin-top: 10px;
+}
+
+#thanks {
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+}
+
+#weather>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.discover {
+    display: flex;
+    flex-direction: column;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+}
 .grid {
     display: grid;
     grid-gap: 15px;
@@ -437,6 +464,98 @@ footer p {
 footer #lastM {
     color: #ffff;
 }
+
+/*Form Styling*/
+
+.join-main {
+    width: 100%;
+    display: block;
+}
+
+.join-main h1 {
+    text-align: cener;
+}
+
+.join-mainWrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fieldset {
+    display: block;
+    border: 1px solid black;
+    border-radius: 8px;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.join-main fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.join-main label {
+    display: block;
+    padding-top: 1rem;
+    color: #020020;
+    font-size: .9rem;
+}
+
+
+#join-main input[type="text"],
+#join-main input[type="email"],
+#join-main select,
+#join-main input[type="number"],
+#join-main input[type="password"] {
+    display: block;
+    border-radius: 5px;
+    padding: .8rem;
+    color: rgb(6, 6, 6);
+    width: 95%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.form1 input:required {
+    border: 1px solid #6f200e;
+    background-color: #a9dbf059;
+}
+
+.form1 input:required:valid {
+    border: 1px solid #999;
+    background-color: #72b8f6;
+}
+
+#formmessage {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin-top: 15px;
+}
+
+#btnSubmit {
+    margin-top: 5%;
+}
+
+#rangevalue {
+    color: var(--text-color a);
+    margin-top: 2%;
+
+}
+
+#r {
+    margin-top: 10px;
+    width: 100%
+}
+
     
   
 @media (min-width:900px) {
