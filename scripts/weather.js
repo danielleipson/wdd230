@@ -1,5 +1,5 @@
-const latitude = 37.1753;
-const longitude = -113.2899;
+const latitude = 37.18;
+const longitude = -113.29;
 const apiKey = '9508730b12a2fe9ec19f307b79beb2ab';
 
 const currentTemp = document.querySelector('#current-temp');
