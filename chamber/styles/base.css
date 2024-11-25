@@ -221,12 +221,13 @@ main h2 {
 }
 
 /* From Uiverse.io by JoseIsra */
-.card {
+.business-container .card {
     width: 12rem;
     cursor: pointer;
+    background-color: #6f1d1b;
   }
   
-  .content {
+  .business-container .content {
     text-align: center;
     position: relative;
     transition: all 2.25s;
@@ -234,12 +235,15 @@ main h2 {
     padding: 7.2em;
     transform-style: preserve-3d;
   }
+  .business-container .card h3 {
+    background-color: #99582a;
+  }
   
-  .card:hover .content {
+  .business-container .card:hover .content {
     transform: rotateY(0.5turn);
   }
   
-  .front,
+  .business-container .front,
   .back {
     position: absolute;
     top: 0;
@@ -251,21 +255,21 @@ main h2 {
     backface-visibility: hidden;
   }
   
-  .title {
+  .business-container .title {
     transform: translateZ(5rem);
     font-size: 1.5rem;
   }
   
-  .subtitle {
+  .business-container .subtitle {
     transform: translateZ(2rem);
   }
   
-  .back {
+  .business-container .back {
     transform: rotateY(0.5turn);
     background-color: #ffe6a7;
   }
   
-  .description {
+  .business-container .description {
     transform: translateZ(3rem);
   }
   
@@ -281,7 +285,7 @@ main h2 {
 .card h3 {
     text-align: center;
     color: #000;
-    background-color: #995829;
+    background-color: #c9cba3;
     padding: 10px;
     margin:auto;
     border-radius:5px 5px 0px 0px;
