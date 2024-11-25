@@ -469,10 +469,6 @@ body{
     text-align: center;
 }
 
-aside, nav, section {
-  border: solid 1px;
-}
-
 section {
   margin-top: 15px;
 }
@@ -483,6 +479,7 @@ section {
 
 .sidebar-section2 {
     height: 200px;
+    border: solid 1px;
 }
 
 .section3 {
@@ -496,7 +493,12 @@ section {
 .section5 {
     height: 300px;
 }
-
+#list-button {
+  
+}
+#grid-button {
+    
+}
 
 footer {
     background-color: #5c5656;
