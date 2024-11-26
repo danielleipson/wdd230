@@ -4,7 +4,7 @@ function calculateWindChill(tempF, windSpeedMPH) {
         return (
             35.74 +
             0.6215 * tempF -
-            35.75 * Math.pow(windSpeedMph, 0.16)
+            35.75 * Math.pow(windSpeedMPH, 0.16)
         ).toFixed(1);
     } else {
         console.log("wind chill calculation not applicable");
@@ -23,22 +23,22 @@ async function getCurrentWeather() {
         console.log('Observation data:', observation);
 
         const temperatureF = (observation.temperature.value * 9/5 + 32).toFixed(1);
-        let windSpeedMph = null;
+        let windSpeedMPH = null;
         if (observation.windSpeed && observation.windSpeed.value !== null) {
-            windSpeedMph = (observation.windspeed.value * 0.621371).toFixed(1);
-            console.log('Wind  speed (mph):', windSpeedMph);
+            windSpeedMPH = (observation.windSpeed.value * 0.621371).toFixed(1);
+            console.log('Wind  speed (mpj):', windSpeedMPH);
         } else {
             console.log('Wind speed date not available.');
         }
 
-        const windChill = windSpeedMph !== null ? calculateWindChill(temperatureF, windSpeedMph) : null;
+        const windChill = windSpeedMPH !== null ? calculateWindChill(temperatureF, windSpeedMPH) : null;
         console.log('Wind chill:', windChill);
 
         //Display current weather information
         weatherContainer.innerHTML = `
         <h4>${observation.textDescription}</h4>
         <p>Temperature: ${temperatureF}°F</p>
-        ${windSpeedMph !== null ? `<p>Wind: ${windSpeedMph} mph</p>` : '<p>Wind data not available.</p>'} 
+        ${windSpeedMPH !== null ? `<p>Wind: ${windSpeedMPH} mph</p>` : '<p>Wind data not available.</p>'} 
         ${windChill ? `<p>Wind Chill: ${windChill}°F</p>` : '<p>Wind chill not applicable.</p>'}
         `;
     } catch (error) {

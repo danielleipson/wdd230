@@ -40,7 +40,7 @@ nav {
     list-style:none;
     margin:0 auto;
     max-width:900px;
-    background-color: var(--primary-color);
+    background-color: #6f1d1b;
     color: var(--text-color);
 }
 .navigation li {
@@ -72,7 +72,7 @@ nav {
   :root {
     --primary-color: #6f1d1b;
     --secondary-color: #99582a;
-    --text-color: #ffe6a7;
+    --text-color: #000;
     --background-color: #fff;
     --heading-color: #000000;
     --footing-color: #5c5656;
@@ -177,7 +177,7 @@ nav {
 	top: 50%; 
 	left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--text-color);
+    color: #FFF;
     font-size: 1.8vh;
     text-shadow: 2px 2px 5px black;
     background: rgba(0,0,0,0.5);
@@ -189,6 +189,8 @@ nav {
     font-size: 3vh;
     border-radius: 8px;
     padding: 10px;
+    background-color:#6f1d1b;
+    color:#fff;
 }
 
   /* Main content of website */
@@ -204,6 +206,13 @@ main h2 {
     font-family:"Open Sans", sans-serif; 
     text-align: center;
 }
+.business-container h2 {
+    color: var(--text-color);
+}
+
+.business-container .card p {
+    color:#000;
+}
 
 .grid-container, .business-container {
     display: grid;
@@ -215,7 +224,7 @@ main h2 {
 
 /* From Uiverse.io by JoseIsra */
 .business-container .card {
-    width: 12rem;
+    width: 10rem;
     cursor: pointer;
     background-color: #6f1d1b;
   }
@@ -264,6 +273,7 @@ main h2 {
   
   .business-container .description {
     transform: translateZ(3rem);
+    color:#000;
   }
   
   
@@ -293,13 +303,13 @@ main h2 {
   
 .card p {
     text-align: center;
-    color: #000000;
+    color: var(--text-color);
 }
 .card ul li a {
-    color: #000000;
+    color: var(--text-color);
 }
 figcaption {
-    color: #000;
+    color: var(--text-color);
 }
 .openSans {
     font-family:"Open Sans", sans-serif; 
@@ -454,11 +464,9 @@ body{
     border: 2px solid white;
 }
 
-#weather>div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+#weather-info h4 {
+    color:var(--text-color);
+    font-weight:400;
 }
 
 
@@ -504,17 +512,17 @@ section {
     height: 300px;
 }
 
-#list-button {
+/*#list-button {
   
 }
 #grid-button {
     
 }
-
+*/
 footer {
     background-color: #5c5656;
     text-align: center;
-    color: var(--text-color);
+    color: #fff;
     padding: 5px;
 }
   
@@ -558,6 +566,9 @@ label, legend {
     font-weight: bold;
     color: #000;
 }
+.join-form {
+    margin-top: 10px;
+}
 input, textarea, select, button {
     padding: 10px;
     margin-bottom: 15px;
@@ -593,7 +604,7 @@ input, textarea, select, button {
 }
 
 .join-main h1 {
-    text-align: cener;
+    text-align: center;
 }
 
 .join-mainWrapper {
@@ -667,14 +678,14 @@ input, textarea, select, button {
 }
 
 #rangevalue {
-    color: var(--text-color a);
+    color: var(--text-color);
     margin-top: 2%;
 
 }
 
 #r {
     margin-top: 10px;
-    width: 100%
+    width: 100%;
 }
 
     
@@ -695,7 +706,7 @@ input, textarea, select, button {
     .navigation li {
         display: block;
         flex: 1 1 100%;
-        color:#000000;
+        color:#000;
     }
     .navigation a {
         text-align: center;
@@ -711,6 +722,7 @@ input, textarea, select, button {
         color:#000;
 
     }
+    
     
     .footer-container {
         display: grid;
