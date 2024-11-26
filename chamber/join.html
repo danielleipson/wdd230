@@ -42,6 +42,11 @@
             </ul>
         </nav>
         <div class="hero-image"> 
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hurricane-valley.webp">
+                <source media="(max-width: 1000px)" srcset="images/hurricane-valley.webp">
+                <img src="images/hurricane-valley.webp" alt="Random Image of people at a table" width="1500" height="750">
+            </picture>
             <div class="hero-text">
                 <h1>Hurricane Valley Chamber of Commerce</h1>
                 <p>Uniting businesses towards future success.</p>
@@ -83,14 +88,26 @@
                 <input class="submitBtn" type="submit" value="Join Chamber!">
             </fieldset>
         </form>
-        <div>
-            <h3>Benefits of Joining Us!</h3>
-            <ul>
-                <li>Be connected to an spetacular, broad and smart community.</li>
-                <li>Be updated and have special access to the best events happening in the city!</li>
-                <li>Receive training on how to build partnerships with other members of your own industry.</li>
-            </ul>
+        <div class="benefits-container">
+            <h2>Membership Benefits</h2>
+            <div class="membership-level">
+                <h3>Non-Profit Membership</h3>
+                <p>No fee, access to networking events, and community support.</p>
+            </div>
+            <div class="membership-level">
+                <h3>Bronze Membership</h3>
+                <p>Includes advertising opportunities and basic event discounts.</p>
+            </div>
+            <div class="membership-level">
+                <h3>Silver Membership</h3>
+                <p>Additional discounts, premium events access, and promotional features.</p>
+            </div>
+            <div class="membership-level">
+                <h3>Gold Membership</h3>
+                <p>All benefits, including spotlight positions, training, and maximum discounts.</p>
+            </div>
         </div>
+    </div>
     </main>
     <footer>
         <div class="footer-container">
