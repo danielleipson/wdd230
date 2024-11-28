@@ -16,29 +16,21 @@
     <meta property="og:url" content="https://danielleipson.github.io/wdd230/chamber/">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
 
-
-
+    
     <title>Hurricane Chamber of Commerce - Join Page</title>
 
 </head>
 <body>
     <header>
         <img src="images/hv-logo.webp" alt="logo">
-        <div class="theme-switch-container">
-            <label class="theme-slider" for="checkbox">
-                <input type="checkbox" id="checkbox">
-                <div class="round slider"></div>
-            </label>
-        </div>
+        
         <nav class="main_nav">
             <ul class="navigation">
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a class="active" href="join.html">Join</a></li>
             </ul>
         </nav>
         <div class="hero-image"> 
@@ -57,21 +49,21 @@
     </header>
     <main id="join-main">
         <form method="get" action="thankyou.html">
-            <fieldset class="join-form">
-                <legend>
-                    Application Information
-                </legend>
-                <label>First Name* <input type="text" name="fname" id="fname" required></label>
-                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
-                <label>Title or Position <input type="text" id="title" name="title" required></label>
-                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" id="email"
+            <div class="join-container">
+                <fieldset class="join-form">
+                    <legend>
+                        Application Information
+                    </legend>
+                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label>Title or Position <input type="text" id="title" name="title" required></label>
+                    <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" id="email" required></label>
+                    <label>Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                </fieldset>
+                <fieldset>
+                    <label>Organization* <input type="text" name="organization" id="organization"
                         required></label>
-                <label>Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-            </fieldset>
-            <fieldset>
-                <label>Organization* <input type="text" name="organization" id="organization"
-                        required></label>
-                <label>Membership Level
+                    <label>Membership Level
                     <select name="membership">
                         <option value="">Please Select &#9662;</option>
                         <option value="np">NP Membership is for non profit organizations and there is no fee.</option>
@@ -79,34 +71,124 @@
                         <option value="silve">Silver Membership</option>
                         <option value="gold">Gold Membership</option>
                     </select>
-                </label>
-                <label>Description<textarea name="description" id="description" required></textarea></label>
-                <input type="hidden" name="timestamp" id="timestamp">
-            </fieldset>
-            <fieldset>
-                <legend>Ready?</legend>
-                <input class="submitBtn" type="submit" value="Join Chamber!">
-            </fieldset>
+                    </label>
+                    <label>Description<textarea name="description" id="description" required></textarea></label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+                <fieldset>
+                    <legend>Ready?</legend>
+                    <input class="submitBtn" type="submit" value="Join Chamber!">
+                </fieldset>
         </form>
-        <div class="benefits-container">
-            <h2>Membership Benefits</h2>
-            <div class="membership-level">
-                <h3>Non-Profit Membership</h3>
-                <p>No fee, access to networking events, and community support.</p>
-            </div>
-            <div class="membership-level">
-                <h3>Bronze Membership</h3>
-                <p>Includes advertising opportunities and basic event discounts.</p>
-            </div>
-            <div class="membership-level">
-                <h3>Silver Membership</h3>
-                <p>Additional discounts, premium events access, and promotional features.</p>
-            </div>
-            <div class="membership-level">
-                <h3>Gold Membership</h3>
-                <p>All benefits, including spotlight positions, training, and maximum discounts.</p>
-            </div>
-        </div>
+
+        <table>
+            <caption>Table 1: Membership Feature Comparison</caption>
+                <thead>
+                        <tr>
+                            <th colspan="5" scope="colgroup">Membership Benefits</th>
+                        </tr>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Non-Profit</th>
+                            <th scope="col">Bronze</th>
+                            <th scope="col">Silver</th>
+                            <th scope="col">Gold</th>
+                        </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Discounts for Chamber Sponsered events</td>
+                        <td>✔️ </td>
+                        <td>✔️ </td>
+                        <td>✔️ </td>
+                        <td>✔️ </td>
+                    </tr>
+                    <tr>
+                        <td>Discount on Chamber travel packages</td>
+                        <td> ✔️</td>
+                        <td>✔️ </td>
+                        <td>✔️ </td>
+                        <td>✔️ </td>
+                    </tr>
+                    <tr>
+                        <td>Free booth space at Chamber community events</td>
+                        <td> ✔️</td>
+                        <td>✔️</td>
+                        <td>✔️ </td>
+                        <td>✔️ </td>
+                    </tr>
+                    <tr>
+                        <td>Opportunity to attend and present at Referral Network</td>
+                        <td>  ❌</td>
+                        <td> ✔️</td>
+                        <td>✔️ </td>
+                        <td>✔️ </td>
+                    </tr>
+                    <tr>
+                        <td>Opportunity to do a giveaway at Connect 4 Lunch and Business Before Hours</td>
+                        <td>  ❌</td>
+                        <td>✔️</td>
+                        <td>✔️ </td>
+                        <td>✔️ </td>
+                    </tr>
+                    <tr>
+                        <td>Listing in Chamber Membership Directory and Chamber Community Guide</td>
+                        <td> ❌</td>
+                        <td> ✔️</td>
+                        <td>✔️ </td>
+                        <td>✔️ </td>
+                    </tr>
+                    <tr>
+                        <td>Ability to market in Welcome Bags</td>
+                        <td> ❌</td>
+                        <td> ❌</td>
+                        <td>✔️ </td>
+                        <td>✔️ </td>
+                    </tr>
+                    <tr>
+                        <td>Special events in calendar on Chamber Website</td>
+                        <td> ❌</td>
+                        <td> ❌</td>
+                        <td>✔️ </td>
+                        <td>✔️ </td>
+                    </tr>
+                    <tr>
+                        <td>Seats at Monthly Chamber luncheon</td>
+                        <td> ❌</td>
+                        <td> ❌</td>
+                        <td>✔️ </td>
+                        <td>✔️ </td>
+                    </tr>
+                    <tr>
+                        <td>Logo on Chamber Website</td>
+                        <td> ❌</td>
+                        <td> ❌</td>
+                        <td> ❌ </td>
+                        <td>✔️ </td>
+                    </tr>
+                    <tr>
+                        <td>Seats at monthly Executive Forum luncheon</td>
+                        <td> ❌</td>
+                        <td> ❌</td>
+                        <td>❌ </td>
+                        <td>✔️ </td>
+                    </tr>
+                    <tr>
+                        <td>Social Media Spotlight</td>
+                        <td> ❌</td>
+                        <td> ❌</td>
+                        <td>❌</td>
+                        <td>✔️ </td>
+                    </tr>
+                    <tr>
+                        <td>Logo displayed on slideshow at Chamber events</td>
+                        <td> ❌</td>
+                        <td> ❌</td>
+                        <td> ❌</td>
+                        <td>✔️ </td>
+                    </tr>
+                </tbody>
+        </table>
     </main>
     <footer>
         <div class="footer-container">

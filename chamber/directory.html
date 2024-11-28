@@ -16,51 +16,32 @@
     <meta property="og:url" content="https://danielleipson.github.io/wdd230/chamber/">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
 
 
-
-    <title>Hurricane Chamber of Commerce Directory Page</title>
+    <title>Hurricane Chamber of Commerce - Directory Page</title>
 
 </head>
 <body>
     <header>
         <img src="images/hv-logo.webp" alt="logo">
-        <div class="theme-switch-container">
-            <label class="theme-slider" for="checkbox">
-                <input type="checkbox" id="checkbox">
-                <div class="round slider"></div>
-            </label>
-        </div>
+
         <nav class="main_nav">
             <ul class="navigation">
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a class="active" href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
-        <div class="hero-image"> 
-            <div class="hero-text">
-                <h1>Hurricane Valley Chamber of Commerce</h1>
-                <p>Uniting businesses towards future success.</p>
-                <button>Join Now</button>
-            </div>
-        </div>
+        
         <button id="menu"></button>
     </header>
     <main>
-        <div id="view">
-            <div id="grid-button" class="none">
-                <img src="images/grid-view.png" alt="button to change the view to grid">
-                <p>Grid</p>
-            </div>
-            <div id="list-button">
-                <img src="images/list-view.png" alt="button to change the view to grid">
-                <p>List</p>
-            </div>
+        <div class="view">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
         </div>
+        <hr>
         <section id="directory" class="grid"></section>
     </main>
     <footer>
@@ -81,8 +62,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/darkmode.js"></script>
-    <script src="windchill.js"></script>
-    <script src="members.js"></script>
+    <script src="scripts/members.js"></script>
 </body>
 </html>

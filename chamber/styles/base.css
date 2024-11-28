@@ -598,6 +598,22 @@ input, textarea, select, button {
     color:var(--secondary-color);
 }
 
+.view {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #fff;
+	text-align: center;
+}
+
+.view button {
+	padding: 1rem;
+	font-weight: 700;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
 .join-main {
     width: 100%;
     display: block;
@@ -687,7 +703,57 @@ input, textarea, select, button {
     margin-top: 10px;
     width: 100%;
 }
+:root {
+	--back: var(--primary-color);
+    --back2: #fff;
+    --foredark: #432818;
+	--forelight: #432818;
+	--border: #000;
+	--borderlight: #bb9457;
+	--shadow: #bb9457;
+	--zebra: #fefae0;
+}
 
+body {
+	font-family: "EB Garamond", Arial, serif;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid #000;
+	box-shadow: 0 5px 8px 1px #000;
+	border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: #432818;
+    font-size: .85rem;
+}
+
+tr:first-child th, .highlight {
+	background-color: var(--back);
+	color: var(--forelight);
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid #432818;
+}
+
+th {
+	background-color: #bb9457;
+	font-size: medium;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebra);
+}
     
   
 @media (min-width:900px) {
