@@ -1,5 +1,18 @@
 const directory = document.querySelector("#directory")
 const memberData = "data/members.json"
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
     // const switcher = document.querySelector('.slider');
 const grid = document.querySelector('#grid-btn')
 const list = document.querySelector('#list-btn')
