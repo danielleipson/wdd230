@@ -488,19 +488,55 @@ section {
 
 /*Directory Page*/
 
-.grid {
+#directory.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
 
-.list {
+#directory.list {
+    display: block;
+}
+
+/* Card styling for list view */
+#directory.list .card {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
 }
 
-.hidden {
+/* Card styling for grid view */
+#directory.grid .card {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+#directory.grid .card img {
+    margin-top:10px;
+}
+
+
+.list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.list-table th, .list-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.list-table th {
+    background-color: #f4f4f4;
+}
+
+/* Hide logo in list view */
+#directory.list .card img {
     display: none;
 }
 

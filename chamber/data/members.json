@@ -5,64 +5,64 @@
             "address": "5252 industrial Dr. Unit #5, Hurricane, Utah 84737",
             "phone_number": "(435) 668-1111",
             "website_url": "https://wiseharvestfreezedriedfoods.com/",
-            "icon": "chamber/images/wise__harvest.webp",
-            "membership_level": "Platinum"
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/wise_harvest.webp",
+            "membership_level": "Gold"
         },
         {
             "name" : "Costa Vida",
             "address": "845 State Street Hurricane, UT 84737",
             "phone_number": "(435) 635-4007",
             "website_url": "https://www.costavida.com/" ,
-            "icon": "chamber/images/costa-vida.jpeg",
-            "membership_level": "Silver"
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/costa-vida.jpeg",
+            "membership_level": "Bronze"
         },
         {
             "name" : "The Peach Avenue",
             "address": "835 W 300 N Hurricane, Utah 84737",
             "phone_number": "(435) 233-6041",
             "website_url": "https://www.facebook.com/people/The-Peach-Ave/61552239442329/",
-            "icon": "chamber/images/Peach.jpeg",
-            "membership_level": "Platinum"
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Peach.jpeg",
+            "membership_level": "Gold"
         },
         {
             "name" : "Lins Marketplace",
             "address": "1120 State St Hurricane, UT 84737",
             "phone_number": "435-635-4477",
             "website_url": "https://www.linsgrocery.com/",
-            "icon": "chamber/images/Lins-Fresh-Market-Logo.jpg",
-            "membership_level": "Gold"
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Lins-Fresh-Market-logo.jpg",
+            "membership_level": "Silver"
         },
         {
             "name" : "Interstate Rock Products Inc.",
             "address": "42 South 850 West Hurricane, UT 84737",
             "phone_number": "(435) 635-2628",
             "website_url": "https://interstaterock.com/",
-            "icon": "chamber/images/interstate-rock-logo.png",
-            "membership_level": "Gold"
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Interstate-rock-logo.png",
+            "membership_level": "Silver"
         },
         {
             "name" : "Hurricane Valley Eye Care",
             "address": "20 South 850 West Suite 3, Hurricane, UT 84737",
             "phone_number": "435-635-7766",
             "website_url": "https://www.hurricanevalleyeyecare.com/",
-            "icon": "chamber/images/HV-eyecare.jpeg",
-            "membership_level": "Bronze"
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/HV-eyecare.jpeg",
+            "membership_level": "Non-Profit"
         },
         {
             "name" : "Bucks Ace Hardware",
             "address": "489 W State St, Hurricane, UT 84737",
             "phone_number": "(435) 635-4449",
             "website_url": "https://www.acehardware.com/",
-            "icon": "chamber/images/Ace.png",
-            "membership_level": "Silver"
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Ace.png",
+            "membership_level": "Bronze"
         },
         {
             "name" : "Dirtball Excavation Inc.",
             "address": "766 N 325 E HURRICANE, UT 84737  ",
             "phone_number": "(435) 272-3133",
             "website_url": "https://www.dirtball.com/",
-            "icon": "chamber/images/Dirtball-holderimg.png",
-            "membership_level": "Bronze"
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Dirtball-holderimg.png",
+            "membership_level": "Non-Profit"
         }                     
     ]
 
