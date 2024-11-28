@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://danielleipson.github.io/wdd230/chamber/">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    
+
     <title>Hurricane Chamber of Commerce - Discover More</title>
 </head>
 <body>
@@ -33,10 +33,10 @@
         <button id="menu"></button>
     </header>
     <main>
-        <div class="discover">
+        <div class="main-content">
             <div class="sidebar">
                 <div class="sidebar-section4">
-                    <h2>Welcome to the Hurricane Valley!</h2>
+                    <h1>Welcome to the Hurricane Valley!</h1>
                     <hr>
                     <p class="visit"></p>
                 </div>
@@ -47,54 +47,17 @@
                     <p>Hurricane Christmas Tree Festival 2024 - December 12-14, 2024 </p>
                 </div>
                 <div class="sidebar-section2">
-                    <div class="month">
-                        <ul>
-                            <li class="prev">&#10094;</li>
-                            <li class="next">&#10095;</li>
-                            <li>November<br><span style="font-size: 18px"></span></li>
-                        </ul>
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <button id="prev-month">&#10094;</button>
+                            <h3 id="current-month"></h3>
+                            <button id="next-month">&#10095;</button>
+                        </div>
+                        <div class="calendar-body">
+                            <div class="calendar-weekdays"></div>
+                            <div class="calendar-dates"></div>
+                        </div>
                     </div>
-                    <ul class="weekdays">
-                        <li>Mo</li>
-                        <li>Tu</li>
-                        <li>We</li>
-                        <li>Th</li>
-                        <li>Fr</li>
-                        <li>Sa</li>
-                        <li>Su</li>
-                    </ul>
-                    <ul class="day">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                        <li>7</li>
-                        <li>8</li>
-                        <li>9</li>
-                        <li>10</li>
-                        <li>11</li>
-                        <li>12</li>
-                        <li>13</li>
-                        <li>14</li>
-                        <li>15</li>
-                        <li><span class="active">16</span></li>
-                        <li>17</li>
-                        <li>18</li>
-                        <li>19</li>
-                        <li>20</li>
-                        <li>21</li>
-                        <li>22</li>
-                        <li>23</li>
-                        <li>24</li>
-                        <li>25</li>
-                        <li>26</li>
-                        <li>27</li>
-                        <li>28</li>
-                        <li>29</li>
-                        <li>30</li>
-                    </ul>
                 </div>
                 <div class="sidebar-section4">
                     <h2>Information</h2>
@@ -102,41 +65,42 @@
                     <p>Population: 25,209</p>
                     <p>County: Washington</p>
                 </div>
-                    <div class="section3">
-                        <img src="images/Narrows_ZionNP-LG.webp" alt="Zion National Park" loading="lazy">
-                        <div class="overlay">
-                            <p>Zion National Park</p>
-                        </div>
+            </div>
+            <div class="images">
+                <div class="section3">
+                    <img src="images/Narrows_ZionNP-LG.webp" alt="Zion National Park" loading="lazy">
+                    <div class="overlay">
+                        <p>Zion National Park</p>
                     </div>
-                    <div class="section5">
-                        <img src="images/mountain-biking.webp" alt="Mountain Biking" loading="lazy">
-                        <div class="overlay">
-                            <p>Mountain Biking</p>
-                        </div>
+                </div>
+                <div class="section5">
+                    <img src="images/mountain-biking.webp" alt="Mountain Biking" loading="lazy">
+                    <div class="overlay">
+                        <p>Mountain Biking</p>
                     </div>
-                    <div class="section3">
-                        <img src="images/UTV-sand-hollow-lg.webp" alt="UTV Tours at Sand Hollow State Park" loading="lazy">
-                        <div class="overlay">
-                            <p>UTV Tours at Sand Hollow State Park</p>
-                        </div>
+                </div>
+                <div class="section3">
+                    <img src="images/UTV-sand-hollow-lg.webp" alt="UTV Tours at Sand Hollow State Park" loading="lazy">
+                    <div class="overlay">
+                        <p>UTV Tours at Sand Hollow State Park</p>
                     </div>
-                    <div class="section5">
-                        <img src="images/quail-creek-state-park-lg.webp" alt="Quail Creek State Park" loading="lazy">
-                        <div class="overlay">
-                            <p>Quail Creek State Park</p>
-                        </div>
+                </div>
+                <div class="section5">
+                    <img src="images/quail-creek-state-park-lg.webp" alt="Quail Creek State Park" loading="lazy">
+                    <div class="overlay">
+                        <p>Quail Creek State Park</p>
                     </div>
-                    <div class="section3">
-                        <img src="images/red-cliffs-pic-lg.webp" alt="Red Cliffs State Park" loading="lazy">
-                        <div class="overlay">
-                            <p>Red Cliffs State Park</p>
-                        </div>
+                </div>
+                <div class="section3">
+                    <img src="images/red-cliffs-pic-lg.webp" alt="Red Cliffs State Park" loading="lazy">
+                    <div class="overlay">
+                        <p>Red Cliffs State Park</p>
                     </div>
-                    <div class="section5">
-                        <img src="images/Sandhollow-lg.webp" alt="Sand Hollow State Park" loading="lazy">
-                        <div class="overlay">
-                            <p>Sand Hollow State Park</p>
-                        </div>
+                </div>
+                <div class="section5">
+                    <img src="images/Sandhollow-lg.webp" alt="Sand Hollow State Park" loading="lazy">
+                    <div class="overlay">
+                        <p>Sand Hollow State Park</p>
                     </div>
                 </div>
             </div>
@@ -160,6 +124,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/number-of-visits.js"></script>
+    <script src="scripts/calendar.js"></script>
 </body>
 </html>

@@ -1,56 +1,66 @@
-const directory = document.querySelector("#directory")
-const memberData = "data/members.json"
+// Selecting necessary DOM elements
+const directory = document.querySelector("#directory");
+const memberData = "data/members.json";
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+const view = document.querySelector("#view");
 
-gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
+// Grid and list view toggle logic
+gridButton.addEventListener("click", () => {
+    directory.classList.add("grid");
+    directory.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listButton.addEventListener("click", () => {
+    directory.classList.add("list");
+    directory.classList.remove("grid");
+});
 
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+// Fetch and display member data
+async function getMemberData() {
+    try {
+        const response = await fetch(memberData);
+        const data = await response.json();
+        displayMembers(data.members);
+    } catch (error) {
+        console.error("Error fetching member data:", error);
+    }
 }
-    // const switcher = document.querySelector('.slider');
-const grid = document.querySelector('#grid-btn')
-const list = document.querySelector('#list-btn')
-const view = document.querySelector('#view')
 
-async function getMembertData() {
-    const response = await fetch(memberData);
-    const data = await response.json();
-    // console.table(data.members);
-    displaymembers(data.members);
-};
-
-const displaymembers = (members) => {
+// Function to display members
+const displayMembers = (members) => {
+    directory.innerHTML = ""; // Clear any previous content
     members.forEach((member) => {
 
         // Create Card Elements
-        let card = document.createElement("div");
-        let name = document.createElement("h3");
-        let icon = document.createElement("img");
-        let address = document.createElement("p");
-        let phone = document.createElement("p");
-        let website = document.createElement("a");
-        let membership = document.createElement("h4")
+        const card = document.createElement("div");
+        card.classList.add("card");
 
-        // Generate Data
+        const name = document.createElement("h3");
+        const icon = document.createElement("img");
+        const address = document.createElement("p");
+        const phone = document.createElement("p");
+        const website = document.createElement("a");
+        const membership = document.createElement("h4");
+
+        // Populate Card Content
         name.textContent = member.name;
-        icon.setAttribute("src", member.image_icon_filename);
+
+        icon.setAttribute("src", member.icon);
         icon.setAttribute("loading", "lazy");
-        icon.setAttribute("alt", `An icon for ${name}`);
+        icon.setAttribute("alt", `Logo of ${member.name}`);
         icon.setAttribute("width", "auto");
         icon.setAttribute("height", "250px");
-        address.textContent = member.address;
-        phone.textContent = member.phone_number;
-        website.setAttribute("href", member.website_url)
-        website.textContent = `${member.name} website`
-        membership.textContent = `Membership Level: ${member.membership_level}`
 
-        // Add Card Elements to Card
+        address.textContent = `Address: ${member.address}`;
+        phone.textContent = `Phone: ${member.phone_number}`;
+        website.setAttribute("href", member.website_url);
+        website.setAttribute("target", "_blank");
+        website.textContent = `${member.name} Website`;
+
+        membership.textContent = `Membership Level: ${member.membership_level}`;
+
+        // Append Elements to Card
         card.appendChild(name);
         card.appendChild(icon);
         card.appendChild(address);
@@ -58,21 +68,18 @@ const displaymembers = (members) => {
         card.appendChild(website);
         card.appendChild(membership);
 
-        // Add card to section
+        // Append Card to Directory
         directory.appendChild(card);
-    })
-}
+    });
+};
 
-getMembertData();
+// View toggle button functionality
+view.addEventListener("click", () => {
+    directory.classList.toggle("list");
+    directory.classList.toggle("grid");
+    listButton.classList.toggle("hidden");
+    gridButton.classList.toggle("hidden");
+});
 
-// switcher.addEventListener('click', () => {
-//     directory.classList.toggle('singlefile');
-//     directory.classList.toggle('grid')
-// })
-
-view.addEventListener('click', () => {
-    directory.classList.toggle('singlefile');
-    directory.classList.toggle('grid')
-    list.classList.toggle('none')
-    grid.classList.toggle('none')
-})
+// Fetch member data on page load
+getMemberData();

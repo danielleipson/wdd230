@@ -322,68 +322,70 @@ h3 {
     text-align: center;
 }
 
-/*Calendar*/
-ul {
-    list-style-type: none;
-}
-body{
-    font-family: "Raleway", sans-serif;
-}
-.month {
-    padding: 15px 0px;
-    width: 100%;
-    background: var(--rust);
-    text-align: center;
-}
-.month ul {
-    margin: 0;
-    padding: 0;
-}
-.month ul li {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-.month .prev {
-    float: left;
-    padding-top: 10px;
-}
-.month .next {
-    float: right;
-    padding-top: 10px;
-}
-.weekdays {
-    margin:0px;
-    padding: 10px 0;
-    background-color: var(--primary-color);
-}
-.weekdays li {
-    display: inline-block;
-    width: 13.5%;
-    color: var(--creamy);
-    text-align: center;
-}
-.days {
-    padding: 10px 0;
-    background: var(--secondary-color);
-    margin: 0;
+/*CALENDAR*/
+
+.calendar {
+    max-width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
 }
 
-.days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 13.6%;
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+.calendar-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.calendar-header button {
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.calendar-weekdays, .calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     text-align: center;
-    margin-bottom: 5px;
-    font-size: 12px;
-    color: var(--creamy);
 }
-.days li .active {
-    padding: 5px;
-    background: var(--rust);
-    color: white !important
+
+.calendar-weekdays div {
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: #bb9457;
 }
+
+.calendar-dates .date {
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #fefae0;
+}
+
+.calendar-dates .date:hover {
+    background: #fff;
+}
+
+.calendar-dates .today {
+    background: #ff6600;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
 
 .discover {
     display: grid;
@@ -393,28 +395,19 @@ body{
 }
 
 .sidebar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap:10px;
+    width: 100%;
+    align-items: start; /* Align items to the top */
+    /*grid-template-rows: auto auto;*/
+}
+.sidebar h1 {
+    text-align:center;
 }
 
-.sidebar-section2,
+/* Left column elements */
+/*.sidebar-section2,
 .sidebar-section4 {
-    flex: 1 1 45%;
-    order: 1;
-    margin: 5px;
-    padding:10px;
-}
-
-.section3,
-.section5 {
-    flex: 1 1 45%;
-    order: 2;
-    text-align: right;
-    padding: 0;
-    
-}
+    grid-column: 1; /* Position in the left column 
+}*/
 
 .section3 img,
 .section5 img {
@@ -446,8 +439,17 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    background-color: var(--rust);
+    background-color: var(--primary-color);
     color: white;
+}
+.main-content {
+    display: grid ;
+    gap: 20px; /* Space between sections */
+    /*display:flex;*/
+    /*flex-direction: column;*/
+}
+.content {
+    flex:1;
 }
 
 .visit {
@@ -491,34 +493,24 @@ section {
   margin-top: 15px;
 }
 
- .sidebar {
-    height: 300px;
+/*Directory Page*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 }
 
-.sidebar-section2 {
-    height: 200px;
-    border: solid 1px;
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.section3 {
-    height: 300px;
+.hidden {
+    display: none;
 }
 
-.sidebar-section4 {
-    height: 100px;
-}
-
-.section5 {
-    height: 300px;
-}
-
-/*#list-button {
-  
-}
-#grid-button {
-    
-}
-*/
 footer {
     background-color: #5c5656;
     text-align: center;
@@ -734,7 +726,9 @@ caption {
 
 tr:first-child th, .highlight {
 	background-color: var(--back);
-	color: var(--forelight);
+	/*color: var(--forelight);*/
+    color:#fff;
+    font-size:larger;
 }
 
 th, td {
@@ -788,6 +782,10 @@ tbody tr:nth-child(odd) {
         color:#000;
 
     }
+    .main-content{
+        grid-template-columns: 1fr 1fr;
+        margin-top:20px;
+    }
     #banner {
         height: 100px;
         background-image: linear-gradient(to bottom, var(--red), var(--rust));
@@ -799,7 +797,7 @@ tbody tr:nth-child(odd) {
         margin-left: -42.5%;
         z-index: 1;
     }
-    
+
     .banner hr {
         width: 60%;
         margin: 0 auto;
