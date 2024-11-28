@@ -4,6 +4,9 @@ html, body {
     padding: 0px;
     border: 0px;
   }
+  body {
+	font-family: "EB Garamond", Arial, serif;
+}
 
 header {
     margin:auto;
@@ -540,6 +543,10 @@ footer #lastM {
     max-width: 1200px;
     margin: 20px;
 }
+.join-container {
+    max-width: 400px;
+    padding:10px;
+}
 .form-container, .benefits-container {
     flex: 1;
     min-width: 300px;
@@ -554,7 +561,7 @@ footer #lastM {
 }
 label, legend {
     display: block;
-    margin: 10px 0 5px;
+    margin: 10px 5px;
     font-weight: bold;
     color: #000;
 }
@@ -606,22 +613,19 @@ input, textarea, select, button {
 }
 
 
-.join-main {
+#join-main {
     width: 100%;
     display: block;
+    display:grid;
+    grid-template-columns: 1fr;
 }
 
-.join-main h1 {
+#join-main h1 {
     text-align: center;
+    font-size:larger;
 }
 
-.join-mainWrapper {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 
 .fieldset {
     display: block;
@@ -706,11 +710,10 @@ input, textarea, select, button {
 	--zebra: #fefae0;
 }
 
-body {
-	font-family: "EB Garamond", Arial, serif;
-}
+
 
 table {
+    max-width:auto;
 	margin: 10px auto;
 	border: thin solid #000;
 	box-shadow: 0 5px 8px 1px #000;
@@ -732,7 +735,7 @@ tr:first-child th, .highlight {
 }
 
 th, td {
-	padding: 7px 15px;
+	padding: 7px 5px;
 	border: 1px solid #432818;
 }
 
@@ -743,105 +746,9 @@ th {
 
 td {
 	text-align: center;
+    font-size:small;
 }
 
 tbody tr:nth-child(odd) {
 	background-color: var(--zebra);
 }
-    
-  
-@media (min-width:900px) {
-    
-    #menu {
-        display:none;
-    }
-    
-    .navigation {
-        display:flex;
-        flex-direction: row;
-        background-color: #6f1d1b;
-        font-size: 25px;
-    }
-  
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-        color:#000;
-    }
-    .navigation a {
-        text-align: center;
-    }
-      
-    .grid-container, .business-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .business-container h2 {
-        grid-column:span 3;
-        color:#000;
-
-    }
-    .main-content{
-        grid-template-columns: 1fr 1fr;
-        margin-top:20px;
-    }
-    #banner {
-        height: 100px;
-        background-image: linear-gradient(to bottom, var(--red), var(--rust));
-        width: 85%;
-        text-align: center;
-        position: fixed;
-        top: 115px;
-        left: 50%;
-        margin-left: -42.5%;
-        z-index: 1;
-    }
-
-    .banner hr {
-        width: 60%;
-        margin: 0 auto;
-        border: 1px solid black;
-    }
-    
-    .banner-close {
-        width: 30px;
-        height: 30px;
-        background-color: transparent;
-        border: none;
-        position: absolute;
-        top: 0px;
-        left: 5px;
-    }
-    
-    .banner-close::after {
-        content: "✖"
-    }
-    
-    .footer-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-    }
-
-    footer p {
-        font-size: 18px;
-        margin: 2px;
-    }
-    .card article {
-        padding:20px;
-    }
-    .card h3 {
-        height: 40px;
-    }
-    .card:nth-child(1) {
-        grid-column: span 2; 
-    }
-    
-    .hero-image img {
-        max-height:400px;
-       
-    }
-    .hero-text {
-        font-size: 3vh;
-    }
-  }
