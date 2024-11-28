@@ -297,18 +297,8 @@ main h2 {
     border-radius:5px 5px 0px 0px;
     font-family:"Open Sans", sans-serif; 
 }
-.card ul {
-    list-style-type: none;
-}
-.card ul li {
-    margin:10px;
-}
-  
 .card p {
     text-align: center;
-    color: var(--text-color);
-}
-.card ul li a {
     color: var(--text-color);
 }
 figcaption {

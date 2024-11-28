@@ -1,6 +1,6 @@
 // Selecting necessary DOM elements
 const directory = document.querySelector("#directory");
-const memberData = "data/members.json";
+const memberData = "https://danielleipson.github.io/wdd230/chamber/data/member.json";
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 const view = document.querySelector("#view");
@@ -22,6 +22,7 @@ async function getMemberData() {
         const response = await fetch(memberData);
         const data = await response.json();
         displayMembers(data.members);
+        console.log(displayMembers);
     } catch (error) {
         console.error("Error fetching member data:", error);
     }
