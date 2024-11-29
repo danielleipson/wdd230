@@ -389,18 +389,11 @@ h3 {
 
 .sidebar {
     width: 100%;
-    align-items: start; /* Align items to the top */
-    /*grid-template-rows: auto auto;*/
+    align-items: start; 
 }
 .sidebar h1 {
     text-align:center;
 }
-
-/* Left column elements */
-/*.sidebar-section2,
-.sidebar-section4 {
-    grid-column: 1; /* Position in the left column 
-}*/
 
 .section3 img,
 .section5 img {
