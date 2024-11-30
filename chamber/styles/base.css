@@ -14,7 +14,7 @@ header {
     color: #ffe6a7;
   }
 header h1 {
-    padding-top:15px 15px 0 15px;
+    padding-top:15px;
     margin:0px;
     font-family:"Open Sans", sans-serif; 
   }
@@ -503,10 +503,12 @@ h3 {
     flex-direction: column;
 }
 
-.images {
+.images:hover {
     display: flex;
     flex-direction: column;
+    box-shadow: 0 5px 8px 1px #000000;
 }
+
 .grid {
     display: grid;
     grid-gap: 15px;
@@ -772,7 +774,7 @@ input, textarea, select, button {
 
 
 table {
-    max-width:auto;
+    max-width:fit-content;
 	margin: 10px auto;
 	border: thin solid #000;
 	box-shadow: 0 5px 8px 1px #000;
