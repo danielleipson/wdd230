@@ -19,8 +19,6 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-
-
     <title>Hurricane Chamber of Commerce - Home Page</title>
 
 </head>
@@ -55,7 +53,7 @@
             <div class="hero-text">
                 <h1>Hurricane Valley Chamber of Commerce</h1>
                 <p>Uniting businesses towards future success.</p>
-                <a href="join.html"><button>Join Now</button></a>
+                <button formaction="join.html">Join Now</button>
             </div>
         </div>
         <button id="menu"></button>
@@ -76,68 +74,22 @@
                     <h3>Local Weather</h3>
                     <p>The current temperature in Hurricane, Utah is <span id="current-temp"></span></p>
                     <figure>
-                        <img id="weather-icon" src="" alt="">
+                        <img id="weather-icon" src="#" alt="#">
                         <figcaption></figcaption>
                     </figure>
                 </div>
                 <div id="weather-info">
                         <p>Loading weather data...</p>
                 </div>
+                <p>3-Day Weather Forecast</p>
+                <ul id="forecast" class="forecast"></ul>
             </section>
         </div>
         
         <div class="business-container">
             <h2>Business Spotlight</h2>
-            <div class="card" >
-                <div class="content">
-                    <div class="front">
-                        <h3 class="title">Interstate Rock Products</h3>
-                        <p class="subtitle">(435) 635-2628
-                            <br><br>
-                            <a href="https://interstaterock.com/">Interstate Rock Products</a>
-                        </p>
-                    </div>
-                    <div class="back">
-                        <p class="description">
-                            Interstate Rock has proven their dedication to providing high-quality mateirials and unwavering support for the community. Their company strives to make Hurricane Valley a better place.
-                        </p>
-                    </div>
-                </div>
-            </div>
-                <div class="card" >
-                    <div class="content">
-                        <div class="front">
-                            <h3 class="title">Hurricane Auto Repair</h3>
-                            <p class="subtitle">(435) 635-2889
-                            <br><br>
-                            <a href="https://www.facebook.com/p/Hurricane-Auto-Repair-100059616441397/">Hurricane Auto Repair</a>
-                            </p>
-                        </div>
-                 
-                        <div class="back">
-                            <p class="description">
-                                Hurricane Automotive and Repair is an honest shop to get your vehicles repaired. Their integrity and dedication to serving their customers shows in the quality of work they provide.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" >
-                    <div class="content">
-                        <div class="front">
-                            <h3 class="title">Coral Cliffs Cinema 8</h3>
-                            <p class="subtitle">(435) 635-1484
-                                <br><br>
-                                <a href="https://www.coralcliffscinema8.com/home">Coral Cliffs Cinema 8</a>
-                            </p>
-                        </div>
-                     
-                        <div class="back">
-                            <p class="description">
-                                Coral Cliffs Cinema has done wonders for the entertainment of our community. Their luxury seating is a nice treat after a long day of work.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div id="spotlight"></div>
+
         </div>
     </main>
     <footer>
@@ -162,6 +114,7 @@
     <script src="scripts/windchill.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>
 

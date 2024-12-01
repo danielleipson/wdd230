@@ -3,15 +3,16 @@
     .grid-container {
         grid-template-columns: 1fr 1fr;
     }
-    .business-container {
+    #spotlight {
         grid-template-columns: 1fr 1fr;
-    }
-    .business-container h2 {
-        grid-column: span 2;
-    }
-    .business-container .card {
+        grid-gap: 40px;
+        max-width: 600px;
         margin:auto;
     }
+    #spotlight .bis-card {
+        margin:auto;
+    }
+
     body {
         margin:auto;
     }
@@ -40,6 +41,10 @@
     .main-content{
         grid-template-columns: 1fr 1fr;
         margin-top:20px;
+    }
+
+    .img {
+        width: 100%; 
     }
 
 }

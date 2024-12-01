@@ -3,8 +3,8 @@ html, body {
     margin: 0px;
     padding: 0px;
     border: 0px;
-  }
-  body {
+}
+body {
 	font-family: "EB Garamond", Arial, serif;
 }
 
@@ -12,12 +12,12 @@ header {
     margin:auto;
     background-color: #5c5656;
     color: #ffe6a7;
-  }
+}
 header h1 {
     padding-top:15px;
     margin:0px;
     font-family:"Open Sans", sans-serif; 
-  }
+}
   /* TOP Navigation */
   
 nav {
@@ -85,7 +85,7 @@ nav {
     [theme="dark"] {
     --primary-color: #9A97F3;
     --secondary-color: #818cab;
-    --text-color: #e1e1ff;
+    --text-color: #fff;
     --background-color: #161625;
     --heading-color: #818cab;
     }
@@ -249,78 +249,25 @@ main h2 {
     opacity: 0;
 }
 
-.business-container h2 {
-    color: #000;
+#spotlight h2 {
+    color: var(--text-color);
 }
 
-.business-container .card p {
+#spotlight .bis-card p {
     color:#000;
 }
 
-.grid-container, .business-container {
+.grid-container, #spotlight {
     display: grid;
     margin: 10px;
     grid-template-columns: auto;
-    grid-gap:10px;
-    justify-content: center;
+    grid-gap:20px;
+/*    justify-content: center;*/
 }
-
-/* From Uiverse.io by JoseIsra */
-.business-container .card {
-    width: 10rem;
-    cursor: pointer;
-    background-color: #6f1d1b;
-  }
-  
-  .business-container .content {
-    text-align: center;
-    position: relative;
-    transition: all 2.25s;
-    background-color: #ffe6a7;
-    padding: 7.2em;
-    transform-style: preserve-3d;
-  }
-  .business-container .card h3 {
-    background-color: #99582a;
-  }
-  
-  .business-container .card:hover .content {
-    transform: rotateY(0.5turn);
-  }
-  
-  .business-container .front,
-  .back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 1.8em;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-  }
-  
-  .business-container .title {
-    transform: translateZ(5rem);
-    font-size: 1.5rem;
-  }
-  
-  .business-container .subtitle {
-    transform: translateZ(2rem);
-  }
-  
-  .business-container .back {
-    transform: rotateY(0.5turn);
-    background-color: #ffe6a7;
-  }
-  
-  .business-container .description {
-    transform: translateZ(3rem);
-    color:#000;
-  }
-  
-  
-.card {
+#spotlight {
+    max-width: 250px;
+}
+  .card {
     box-shadow: 0 5px 8px 1px #000000;
     margin-bottom: 15px;
     margin-top:10px;
@@ -341,6 +288,93 @@ main h2 {
     text-align: center;
     color: var(--text-color);
 }
+/*.bis-card-container {
+    display:grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minimax(300px, 1fr));
+    justify-content: center;
+    padding: 10px;
+}*/
+.bis-card {
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 8px 1px #000000;
+    perspective: 1000px;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    margin: 1rem;
+    background-color: #6f1d1b;
+    margin-bottom: 10px;
+}
+ .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.bis-card:hover .content {
+    transform: rotateY(0.5turn);
+}
+/* Front and back styles */
+ .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+ .front {
+    background-color:#ffe6a7;
+}
+
+ .back {
+    background-color: #ffe6a7;
+    transform: rotateY(180deg);
+    text-align: center;display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 1rem; 
+    padding: 1rem;
+}
+
+/* Styling for logo image */
+ .front img.logo {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+}
+
+/* Styling for the back content */
+ .back h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+ .back p {
+    margin: 0.5rem 0;
+}
+
+.back a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+ .back a:hover {
+    text-decoration: underline;
+}
+
 figcaption {
     color: var(--text-color);
 }
@@ -435,12 +469,6 @@ h3 {
     text-align:center;
 }
 
-.section3 img,
-.section5 img {
-    max-width: 100%;
-    height: auto;
-    padding: 0;
-}
 .discover-main {
     grid-column: 1/3;
 }
@@ -457,22 +485,9 @@ h3 {
     position: relative;
 }
 
-.overlay {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: var(--primary-color);
-    color: white;
-}
 .main-content {
     display: grid ;
-    gap: 20px; /* Space between sections */
-    /*display:flex;*/
-    /*flex-direction: column;*/
+    gap: 20px; 
 }
 .content {
     flex:1;
@@ -497,16 +512,86 @@ h3 {
     font-weight:400;
 }
 
+.forecast {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .forecast li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  .forecast li img {
+    width: 50px;
+    height: 50px;
+  }
+  .forecast li h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  .forecast li p {
+    margin: 0;
+  }
 
 .discover {
     display: flex;
     flex-direction: column;
 }
 
-.images:hover {
+.image-container {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 8px 1px #000000;
+    gap: 10px; 
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.img {
+    position: relative;
+    width: 100%; 
+    overflow: hidden;
+    border-radius: 10px;
+    /*max-width: 90%;*/
+}
+
+.img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.img:hover img {
+    transform: scale(1.1); 
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1rem; 
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.img:hover .overlay {
+    opacity: 1; 
 }
 
 .grid {
@@ -580,6 +665,7 @@ footer {
     text-align: center;
     color: #fff;
     padding: 5px;
+    margin-top: 20px;
 }
   
 footer p {

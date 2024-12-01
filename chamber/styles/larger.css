@@ -1,13 +1,12 @@
 @media (min-width:1024px) {
       
-    .grid-container, .business-container {
+    .grid-container, #spotlight {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .business-container h2 {
-        grid-column:span 3;
-        color:#000;
+    .bis-card {
+        margin-bottom: 10px;
     }
 
     #join-main {
