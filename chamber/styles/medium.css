@@ -5,8 +5,8 @@
     }
     #spotlight {
         grid-template-columns: 1fr 1fr;
-        grid-gap: 40px;
-        max-width: 600px;
+        grid-gap: 75px;
+        max-width: 960px;
         margin:auto;
     }
     #spotlight .bis-card {

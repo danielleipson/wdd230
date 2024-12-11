@@ -18,12 +18,12 @@
          // console.table(data.info);
  }
 
- getBannerData();
+ if (showDates.includes(date.getDay())) {
+    getBannerData();
+} else {
+    banner.style.display = "none"; // Hide the banner completely on other days
+}
 
- button.addEventListener('click', () => {
-     banner.classList.toggle('hidden-banner')
- })
-
- if (!showDates.includes(date.getDay())) {
-     banner.classList.toggle('none');
- }
+button.addEventListener('click', () => {
+    banner.classList.toggle('hidden-banner');
+});
