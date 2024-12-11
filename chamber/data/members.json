@@ -13,7 +13,7 @@
             "address": "845 State Street Hurricane, UT 84737",
             "phone_number": "(435) 635-4007",
             "website_url": "https://www.costavida.com/" ,
-            "icon": "https://danielleipson.github.io/wdd230/chamber/images/costa-vida.jpeg",
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/costa-vida.webp",
             "membership_level": "Bronze"
         },
         {
@@ -21,7 +21,7 @@
             "address": "835 W 300 N Hurricane, Utah 84737",
             "phone_number": "(435) 233-6041",
             "website_url": "https://www.facebook.com/people/The-Peach-Ave/61552239442329/",
-            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Peach.jpeg",
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Peach.webp",
             "membership_level": "Gold"
         },
         {
@@ -29,7 +29,7 @@
             "address": "1120 State St Hurricane, UT 84737",
             "phone_number": "435-635-4477",
             "website_url": "https://www.linsgrocery.com/",
-            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Lins-Fresh-Market-logo.jpg",
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Lins-Fresh-Market-logo.webp",
             "membership_level": "Silver"
         },
         {
@@ -37,7 +37,7 @@
             "address": "42 South 850 West Hurricane, UT 84737",
             "phone_number": "(435) 635-2628",
             "website_url": "https://interstaterock.com/",
-            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Interstate-rock-logo.png",
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Interstate-rock-logo.webp",
             "membership_level": "Silver"
         },
         {
@@ -45,7 +45,7 @@
             "address": "20 South 850 West Suite 3, Hurricane, UT 84737",
             "phone_number": "435-635-7766",
             "website_url": "https://www.hurricanevalleyeyecare.com/",
-            "icon": "https://danielleipson.github.io/wdd230/chamber/images/HV-eyecare.jpeg",
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/HV-eyecare.webp",
             "membership_level": "Non-Profit"
         },
         {
@@ -53,7 +53,7 @@
             "address": "489 W State St, Hurricane, UT 84737",
             "phone_number": "(435) 635-4449",
             "website_url": "https://www.acehardware.com/",
-            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Ace.png",
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Ace.webp",
             "membership_level": "Bronze"
         },
         {
@@ -61,7 +61,7 @@
             "address": "766 N 325 E HURRICANE, UT 84737  ",
             "phone_number": "(435) 272-3133",
             "website_url": "https://www.dirtball.com/",
-            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Dirtball-holderimg.png",
+            "icon": "https://danielleipson.github.io/wdd230/chamber/images/Dirtball-holderimg.webp",
             "membership_level": "Non-Profit"
         }                     
     ]
