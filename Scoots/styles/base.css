@@ -1,0 +1,366 @@
+html, body {
+    height:100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+body {
+	font-family: "EB Garamond", Arial, serif;
+}
+
+header {
+    margin:auto;
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+header h1 {
+    padding-top:15px;
+    margin:0px;
+    font-family:"Open Sans", sans-serif; 
+}
+
+:root {
+    --darkblue: #006d77;
+    --lightblue: #83c5be;
+    --xtralightblue: #edf6f9;
+    --pink: #ffddd2;
+    --tangerine: #e29578;
+    --lightyellow: #fff99b;
+    --white:#fff;
+    --black:#000;
+}
+  /* TOP Navigation */
+  
+nav {
+    background-color:var(--tangerine);
+  }
+  
+  /* small view navigation */
+#menu {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: var(--black);
+    position: absolute;
+    top: 50px;
+    right: 25px;
+}
+  
+#menu::before {
+    content: "☰";
+}
+  
+.navigation {
+    list-style:none;
+    margin:0 auto;
+    max-width:900px;
+    background-color: var(--tangerine);
+    color: var(--black);
+}
+.navigation li {
+    display:none;
+}
+  
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    text-decoration: none;
+    color: var(--black);
+    transition:0.5s;
+}
+.navigation a:hover {
+    background-color: var(--pink);
+    color: var(--black);
+    font-weight: 700;
+}
+  
+.show li {
+    display: block;
+}
+#menu.open::before {
+    content: "✖️";
+}
+
+.hero-image {
+    position:relative;
+    height: 300px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    text-align: center;
+    font-size: 1.8vh;
+	top: 50%; 
+	left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: 1.8vh;
+    text-shadow: 2px 2px 5px black;
+    background: rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+}
+
+.hero-image button {
+    font-size: 3vh;
+    border-radius: 8px;
+    padding: 10px;
+    background-color:var(--tangerine);
+    color:var(--white);
+    cursor:pointer;
+}
+
+ /* Main content of website */
+  
+ main {
+    max-width:960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:"Raleway", sans-serif; 
+}
+
+main h2 {
+    font-family:"Open Sans", sans-serif; 
+    text-align: center;
+}
+
+.banner {
+    height: 100px;
+    background-color: var(--black);
+    width: 100%;
+    text-align: center;
+    position:relative;
+    top: 0;
+    left: 0;
+    /*margin-left: -42.5%;*/
+    z-index: 1;
+    color:var(--white);
+    font-weight: bolder;
+}
+
+.banner hr {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.banner-close {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+.banner-close::after {
+    content: "✖";
+    color: var(--white);
+}
+
+.hidden-banner {
+    visibility: hidden;
+    transition: visibility .5s, opacity .5s linear;
+    opacity: 0;
+}
+
+.card {
+    box-shadow: 0 5px 8px 1px #000000;
+    margin-bottom: 15px;
+    margin-top:10px;
+    border-radius:5px;
+    text-align:center;
+}
+  
+.card h3 {
+    text-align: center;
+    color: var(--black);
+    background-color: #c9cba3;
+    padding: 10px;
+    margin:auto;
+    border-radius:5px 5px 0px 0px;
+    font-family:"Open Sans", sans-serif; 
+}
+.card p {
+    text-align: center;
+    color: var(--black);
+}
+
+/*Form Styling*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px;
+}
+.join-container {
+    max-width: 400px;
+    padding:10px;
+}
+.form-container, .benefits-container {
+    flex: 1;
+    min-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.form-container {
+    max-width: 600px;
+}
+label, legend {
+    display: block;
+    margin: 10px 5px;
+    font-weight: bold;
+    color: var(--black);
+}
+.join-form {
+    margin-top: 10px;
+}
+input, textarea, select, button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+/*.benefits-container {
+    background-color: var(--primary-color);
+    box-shadow: 0 5px 8px 1px #000000;
+}*/
+
+.view {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #fff;
+	text-align: center;
+}
+
+.view button {
+	padding: 1rem;
+	font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+#join-main {
+    width: 100%;
+    display: block;
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+#join-main h1 {
+    text-align: center;
+    font-size:larger;
+}
+
+
+
+.fieldset {
+    display: block;
+    border: 1px solid black;
+    border-radius: 8px;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.join-main fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.join-main label {
+    display: block;
+    padding-top: 1rem;
+    color: #020020;
+    font-size: .9rem;
+}
+
+
+#join-main input[type="text"],
+#join-main input[type="email"],
+#join-main select,
+#join-main input[type="tel"],
+#join-main input[type="password"] {
+    display: block;
+    border-radius: 5px;
+    padding: .8rem;
+    color: #060606;
+    width: 95%;
+    max-width: 400px;
+    appearance: none;
+    border: 1px solid #999;
+}
+
+.form1 input:required {
+    border: 1px solid var(--primary-color);
+    background-color: rgba(169, 219, 240, 0.35);
+}
+
+.form1 input:required:valid {
+    border: 1px solid #999;
+    background-color: #72b8f6;
+}
+
+#formmessage {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin-top: 15px;
+}
+
+#btnSubmit {
+    margin-top: 5%;
+}
+
+#rangevalue {
+    color: var(--text-color);
+    margin-top: 2%;
+
+}
+
+#r {
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+footer {
+    background-color:var(--darkblue);
+    text-align: center;
+    color: var(--white);
+    padding: 5px;
+    margin-top: 30px;
+}
+  
+footer p {
+    margin:0;
+    font-size: 0.875rem;
+}
+
+.copyright p {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+  
+footer #lastM {
+    color: var(--white);
+}

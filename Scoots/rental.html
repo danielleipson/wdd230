@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
+    <meta name="description" content="Scoots - Rentals Page">
+    <meta name="author" content="Danielle Ipson">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Danielle Ipson - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://danielleipson.github.io/wdd230/scoots/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <button class="banner-close"> </button>
+            <div class="banner-title"></div>
+            <div class="banner-text"></div>
+        </div>
+        <div class="theme-switch-container">
+            <label class="theme-slider" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <span class="round slider"></span>
+            </label>
+        </div>
+        <img src="images/Hurricane-Valley-logo.webp" alt="logo">
+        <nav class="main_nav">
+            <ul class="navigation">
+                <li><a href="index.html">-Home</a></li>
+                <li><a class="active" href="rental.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-image"> 
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/Random-pic-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/Random-pic-medium.webp">
+                <img src="images/Random-pic-large.webp" alt="Random Image of people at a table" width="1500" height="750">
+            </picture>
+            <div class="hero-text">
+                <h1>Hurricane Valley Chamber of Commerce</h1>
+                <p>Uniting businesses towards future success.</p>
+                <form action="join.html" method="get">
+                    <button>Join Now</button>
+                </form>
+            </div>
+        </div>
+        <button id="menu"></button>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <img src="images/Hurricane-Valley-logo.webp" alt="logo">
+            </div>
+            <section>
+                <h3>Contact Information:</h3>
+                <h4>Scoots Motor Scooter Rentals </h4>
+                <p>Km 4.5, 77675 Cozumel, Q.R., Mexico</p>
+                <p>Phone: +52 999 888 7070</p>
+            </section>
+        </div>
+        <div class="copyright">
+            <p>&copy; Danielle Ipson | Final Project for WDD230 | 2024
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlight.js"></script>
+</body>
+</html>
+
