@@ -12,7 +12,7 @@
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Danielle Ipson - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://danielleipson.github.io/wdd230/scoots/images/Cozumel-beach.jpg">
     <meta property="og:url" content="https://danielleipson.github.io/wdd230/scoots/">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -25,13 +25,18 @@
         <img src="images/hv-logo.webp" alt="logo">
         <nav class="main_nav">
             <ul class="navigation">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="index.html">-Home</a></li>
+                <li><a class="active" href="rental.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
         <div class="hero-image"> 
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/cozumel-beach-sm.webp">
+                <source media="(max-width: 1000px)" srcset="images/cozumel-beach-md.webp">
+                <img src="images/cozumel-beach-lg.webp" alt="Ocean at Cozumel" width="1500" height="750">
+            </picture>
             <div class="hero-text">
                 <h1>Scoots</h1>
                 <h2>Motor Scooter Rentals</h2>
@@ -51,6 +56,7 @@
                 <h3>Contact Information:</h3>
                 <h4>Scoots Motor Scooter Rentals </h4>
                 <p>Km 4.5, 77675 Cozumel, Q.R., Mexico</p>
+                <p>Email: Scoots_rentals@gmail.com</p>
                 <p>Phone: +52 999 888 7070</p>
             </section>
         </div>

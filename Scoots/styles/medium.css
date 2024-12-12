@@ -22,7 +22,6 @@
     .navigation {
         display:flex;
         flex-direction: row;
-        background-color: #6f1d1b;
         font-size: 25px;
     }
   

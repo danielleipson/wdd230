@@ -1,5 +1,53 @@
 {
     "prices" : [
-        
+        {
+            "rental" : "Honda Metro Scooter",
+            "persons": "1",
+            "res-half-day": "$20",
+            "res-full-day": "$30",
+            "walk-half-day": "$25",
+            "walk-full-day": "$35"
+        },
+        {
+            "rental" : "Honda Dio Scooter",
+            "persons": "2",
+            "res-half-day": "$30",
+            "res-full-day": "$40",
+            "walk-half-day": "$35",
+            "walk-full-day": "$45"
+        },
+        {
+            "rental" : "Honda PCX150 Scooter",
+            "persons": "2",
+            "res-half-day": "$40",
+            "res-full-day": "$50",
+            "walk-half-day": "$45",
+            "walk-full-day": "$55"
+        },
+        {
+            "rental" : "Honda Pioneer ATV",
+            "persons": "4",
+            "res-half-day": "$50",
+            "res-full-day": "$70",
+            "walk-half-day": "$60",
+            "walk-full-day": "$80"
+        },
+        {
+            "rental" : "Jeep Wrangler - 4 door with A/C",
+            "persons": "5",
+            "res-half-day": "$70",
+            "res-full-day": "$100",
+            "walk-half-day": "$85",
+            "walk-full-day": "$125"
+        },
+        {
+            "rental" : "Jeep Wrangler- 2 door",
+            "persons": "4",
+            "res-half-day": "$60",
+            "res-full-day": "$85",
+            "walk-half-day": "$70",
+            "walk-full-day": "$90"
+        }
+
     ]
 }
