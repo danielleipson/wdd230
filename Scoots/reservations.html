@@ -75,7 +75,8 @@
             <div id="formmessage"></div>
             <h1>Rental Agreement Details</h1>
             <fieldset>
-            <form action=".html" method="GET" class="form1">
+            <form action="confirmation.html" method="GET" class="form1">
+                <label>Today's Date <input type="date" id="today" name="today" ></label>
                 <label>First Name* <input type="text" name="fname" id="fname" required></label>
                 <label>Last Name* <input type="text" name="lname" id="lname" required></label>
                 <label>Password* <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{7,}"></label>
@@ -86,22 +87,71 @@
 
                 <fieldset>
                 <legend>Rental Period</legend>
-                <label>Anticipated Beginning Date <input type="date" name="completeDate"></label>
-                <label>Anticipated End Date <input type="date" name="completeDate"></label>
+                <label>Beginning Date <input type="date" id="start" name="trip-start" ></label>
+                <label>End Date <input type="date" id="end" name="trip-end"></label>
                 </fieldset>
                 <fieldset>
                     <legend>Rental Type</legend>
                     <div>Scooters</div>
-                    <label><input type="radio" name="audiance" value="beginner">Honda Metropolitan (49cc)</label>
-                    <label><input type="radio" name="audiance" value="intermediate">Honda Dio (110cc)</label>
-                    <label><input type="radio" name="audiance" value="advanced">Honda PCX150 (149cc)</label>
+                    <label><input type="radio" name="audiance" value="Honda Metropolitan (49cc)">Honda Metropolitan (49cc)</label>
+                    <label><input type="radio" name="audiance" value="Honda Dio (110cc)">Honda Dio (110cc)</label>
+                    <label><input type="radio" name="audiance" value="Honda PCX150 (149cc)">Honda PCX150 (149cc)</label>
+                    <label>Number of Rentals <input type="number" name="authors"></label>
+                    <hr>
 
                     <div>Side-by-side ATV's</div>
-                    <label><input type="radio" name="audiance" value="beginner">Honda Pioneer 1000</label>
+                    <label><input type="radio" name="audiance" value="Honda Pioneer 1000">Honda Pioneer 1000</label>
+                    <label>Number of Rentals <input type="number" name="authors"></label>
+                    <hr>
 
-                    <div>Scooters</div>
-                    <label><input type="radio" name="audiance" value="beginner">Jeep Wrangler - 4 door manuel with A/C </label>
-                    <label><input type="radio" name="audiance" value="intermediate">Jeep Wrangler - 2 door - open air - manuel</label>
+                    <div>Jeeps</div>
+                    <label><input type="radio" name="audiance" value="Jeep Wrangler - 4 door manuel with A/C">Jeep Wrangler - 4 door manuel with A/C </label>
+                    <label><input type="radio" name="audiance" value="Jeep Wrangler - 2 door - open air - manuel">Jeep Wrangler - 2 door - open air - manuel</label>
+                    <label>Number of Rentals <input type="number" name="authors"></label>
+                </fieldset>
+
+                <fieldset>
+                    <label>Cruise Line
+                        <select name="subject">
+                            <option value="">Please Select &#9662;</option>
+                            <option value="Royal">Royal Caribbean</option>
+                            <option value="Oceania">Oceania</option>
+                            <option value="Celebrity">Celebrity</option>
+                            <option value="Viking">Viking Ocean</option>
+                            <option value="Seabourn">Seabourn</option>
+                            <option value="Regent">Regent Seven Seas</option>
+                            <option value="Silversea">Silversea</option>
+                            <option value="Costa">Costa</option>
+                            <option value="N/A">N/A</option>
+                        </select>
+                    </label>
+                    <label>Home Country
+                        <select name="subject">
+                            <option value="">Please Select &#9662;</option>
+                            <option value="Afganistan">Afganistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option 
+                            value="Andorra">Andorra </option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Brazil">Brazil</option>
+                            <option 
+                            value="Bulgaria">Bulgaria</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Dominican">Dominican Republic</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Greece">Greece</option>
+                            <option value="USA">United States of America</option>
+                        </select>
+                    </label>
                 </fieldset>
 
                 <fieldset>

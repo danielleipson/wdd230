@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
+    <meta name="description" content="Scoots - Confirmation page">
+    <meta name="author" content="Danielle Ipson">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Danielle Ipson - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://danielleipson.github.io/wdd230/scoots/images/Cozumel-beach.jpg">
+    <meta property="og:url" content="https://danielleipson.github.io/wdd230/scoots/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/hv-logo.webp" alt="logo">
+        <nav class="main_nav">
+            <ul class="navigation">
+                <li><a href="index.html">-Home</a></li>
+                <li><a class="active" href="rental.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hero-image"> 
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/cozumel-beach-sm.webp">
+                <source media="(max-width: 1000px)" srcset="images/cozumel-beach-md.webp">
+                <img src="images/cozumel-beach-lg.webp" alt="Ocean at Cozumel" width="1500" height="750">
+            </picture>
+            <div class="hero-text">
+                <h1>Scoots</h1>
+                <h2>Motor Scooter Rentals</h2>
+            </div>
+        </div>
+        <button id="menu"></button>
+    </header>
+    <main>
+        <h2> We have received your reservation. We are thrilled that you have chosen Scoots for your next adventure!</h2>
+        <h4>If you have any questions or need to make changes to your reservation, please reach out to us: Email: Scoots_rentals@gmail.com or Phone: +52 999 888 7070.</h4>
+
+        <body>
+            <h1>Confirmation Page</h1>
+            <div class="confirmation-item"><strong>Today's Date:</strong> <span id="today"></span></div>
+            <div class="confirmation-item"><strong>First Name:</strong> <span id="fname"></span></div>
+            <div class="confirmation-item"><strong>Last Name:</strong> <span id="lname"></span></div>
+            <div class="confirmation-item"><strong>Email:</strong> <span id="email"></span></div>
+            <div class="confirmation-item"><strong>Phone:</strong> <span id="phone"></span></div>
+            <div class="confirmation-item"><strong>Password:</strong> <span id="password"></span></div>
+            <div class="confirmation-item"><strong>Rental Start Date:</strong> <span id="start"></span></div>
+            <div class="confirmation-item"><strong>Rental End Date:</strong> <span id="end"></span></div>
+            <div class="confirmation-item"><strong>Rental Type:</strong> <span id="rentalType"></span></div>
+             <div class="confirmation-item"><strong>Number of Rentals:</strong> <span id="numRentals"></span></div>
+            <div class="confirmation-item"><strong>Cruise Line:</strong> <span id="cruiseLine"></span></div>
+            <div class="confirmation-item"><strong>Home Country:</strong> <span id="homeCountry"></span></div>
+            <div class="confirmation-item"><strong>Special Accommodations or Comments:</strong> <span id="description"></span></div>
+        </body>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <img src="images/Hurricane-Valley-logo.webp" alt="logo">
+            </div>
+            <section>
+                <h3>Contact Information:</h3>
+                <h4>Scoots Motor Scooter Rentals </h4>
+                <p>Km 4.5, 77675 Cozumel, Q.R., Mexico</p>
+                <p>Email: Scoots_rentals@gmail.com</p>
+                <p>Phone: +52 999 888 7070</p>
+            </section>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="fullYear"></span>Danielle Ipson | Final Project for WDD230 | 2024
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/confirmation.js"></script>
+</body>
+</html>
