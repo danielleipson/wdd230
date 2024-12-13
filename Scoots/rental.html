@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
-    <meta name="description" content="Scoots - Rentals Page">
+    <meta name="description" content="Scoots - Reservations Page">
     <meta name="author" content="Danielle Ipson">
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Danielle Ipson - WDD 230 - Web Frontend Development">
@@ -35,30 +35,35 @@
         <img src="images/Hurricane-Valley-logo.webp" alt="logo">
         <nav class="main_nav">
             <ul class="navigation">
-                <li><a href="index.html">-Home</a></li>
-                <li><a class="active" href="rental.html">Rentals</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rental.html">᯽Rentals</a></li>
+                <li><a class="active" href="reservations.html">Reservations</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
         <div class="hero-image"> 
             <picture>
-                <source media="(max-width: 500px)" srcset="images/Random-pic-small.webp">
-                <source media="(max-width: 1000px)" srcset="images/Random-pic-medium.webp">
-                <img src="images/Random-pic-large.webp" alt="Random Image of people at a table" width="1500" height="750">
+                <source media="(max-width: 500px)" srcset="images/cozumel-sm.webp">
+                <source media="(max-width: 1000px)" srcset="images/cozumel-md.webp">
+                <img src="images/cozumel-lg.webp" alt="Cozumel town sign" width="1500" height="750">
             </picture>
             <div class="hero-text">
-                <h1>Hurricane Valley Chamber of Commerce</h1>
-                <p>Uniting businesses towards future success.</p>
-                <form action="join.html" method="get">
-                    <button>Join Now</button>
+                <h1>Scoots</h1>
+                <p>Motor Scooter Rentals</p>
+                <form action="reservations.html" method="get">
+                    <button>Reserve Now!</button>
                 </form>
             </div>
         </div>
         <button id="menu"></button>
     </header>
     <main>
-
+        <section>
+            <h1>Rental Prices</h1>
+            <div id="table-container"></div>
+            <script src="prices.js"></script>
+        </section>
+                      
     </main>
     <footer>
         <div class="footer-container">
@@ -79,11 +84,9 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/weather.js"></script>
-    <script src="scripts/banner.js"></script>
-    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/prices.js"></script>
 </body>
 </html>
+
 

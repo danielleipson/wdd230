@@ -2,7 +2,7 @@ const weatherDiv = document.querySelector("#weather");
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=20.508046802875196&lon=-86.94553121679152&appid=6abb07fe3579e18bd052380bbf880933&units=imperial`
 const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=20.508046802875196&lon=-86.94553121679152&appid=6abb07fe3579e18bd052380bbf880933&units=imperial`
 const highTemp = document.querySelector(".hightemp")
-const tempbtn = document.querySelector(".tempbtn")
+const tempbutton = document.querySelector(".tempbutton")
 
 
 async function getWeather() {

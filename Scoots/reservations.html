@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
-    <meta name="description" content="Scoots - Reservations Page">
+    <meta name="description" content="Scoots - Rentals Page">
     <meta name="author" content="Danielle Ipson">
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Danielle Ipson - WDD 230 - Web Frontend Development">
@@ -35,36 +35,84 @@
         <img src="images/Hurricane-Valley-logo.webp" alt="logo">
         <nav class="main_nav">
             <ul class="navigation">
-                <li><a href="index.html">-Home</a></li>
-                <li><a href="rental.html">Rentals</a></li>
-                <li><a class="active" href="reservations.html">Reservations</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="rental.html">Rentals</a></li>
+                <li><a href="reservations.html">᯽Reservations</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
         <div class="hero-image"> 
             <picture>
-                <source media="(max-width: 500px)" srcset="images/Random-pic-small.webp">
-                <source media="(max-width: 1000px)" srcset="images/Random-pic-medium.webp">
-                <img src="images/Random-pic-large.webp" alt="Random Image of people at a table" width="1500" height="750">
+                <source media="(max-width: 500px)" srcset="images/beach-sm.webp">
+                <source media="(max-width: 1000px)" srcset="images/beach-md.webp">
+                <img src="images/beach-lg.webp" alt="Beach" width="1500" height="750">
             </picture>
             <div class="hero-text">
-                <h1>Hurricane Valley Chamber of Commerce</h1>
-                <p>Uniting businesses towards future success.</p>
-                <form action="join.html" method="get">
-                    <button>Join Now</button>
-                </form>
+                <h1>Scoots</h1>
+                <p>Motor Scooter Rentals</p>
             </div>
         </div>
         <button id="menu"></button>
     </header>
-    <main>
-        <section>
-            <h1>Rental Prices</h1>
-            <div id="table-container"></div>
-            <script src="prices.js"></script>
-        </section>
-                      
+
+    <div class="card">
+    <h1>Rental Agreement Information</h1>
+        <article>
+            <p>• A $50 security deposit is required to confirm reservations.</p>
+            <p>• A valid drivers license is required in hand at the time of rental.</p>
+            <p>• No one under the age of 12 years of age are allowed to ride on the scooters.</p>
+            <p>• Fuel charge is not included.</p>
+            <p>• Unlimited mileage.</p>
+            <p>• Liability insurance is included.</p>
+            <p>• Damage insurance is available for purchase.</p>
+            <p>• Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
+            <p>• Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</p>
+            <p>• Rentals may be returned to either physical location.</p>
+        </article>
+    </div>
+    <main class="form-main">
+        <div class="formWrapper">
+            <div id="formmessage"></div>
+            <h1>Rental Agreement Details</h1>
+            <fieldset>
+            <form action=".html" method="GET" class="form1">
+                <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label>Password* <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{7,}"></label>
+                <label>Phone*<input type="tel" name="phone" placeholder="1235551234"></label>
+                <label>Email* <input type="email" id="email" name="email" title="A valid byui.edu email address."
+                    placeholder="someone@byui.edu" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+                </fieldset>
+
+                <fieldset>
+                <legend>Rental Period</legend>
+                <label>Anticipated Beginning Date <input type="date" name="completeDate"></label>
+                <label>Anticipated End Date <input type="date" name="completeDate"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Rental Type</legend>
+                    <div>Scooters</div>
+                    <label><input type="radio" name="audiance" value="beginner">Honda Metropolitan (49cc)</label>
+                    <label><input type="radio" name="audiance" value="intermediate">Honda Dio (110cc)</label>
+                    <label><input type="radio" name="audiance" value="advanced">Honda PCX150 (149cc)</label>
+
+                    <div>Side-by-side ATV's</div>
+                    <label><input type="radio" name="audiance" value="beginner">Honda Pioneer 1000</label>
+
+                    <div>Scooters</div>
+                    <label><input type="radio" name="audiance" value="beginner">Jeep Wrangler - 4 door manuel with A/C </label>
+                    <label><input type="radio" name="audiance" value="intermediate">Jeep Wrangler - 2 door - open air - manuel</label>
+                </fieldset>
+
+                <fieldset>
+                    <label>Special Accomodations or Comments<textarea name="description" id="description" required></textarea></label>
+                </fieldset>
+
+                <button id="btnSubmit" type="submit">Rent Now</button>
+            </form>
+        </div>
     </main>
+
     <footer>
         <div class="footer-container">
             <div>
@@ -84,8 +132,11 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/weather.js"></script>
-    <script src="scripts/prices.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>
 
