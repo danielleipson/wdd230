@@ -45,5 +45,7 @@
     .img {
         width: 100%; 
     }
-
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
 }

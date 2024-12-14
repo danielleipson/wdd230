@@ -17,22 +17,16 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <title>Scoots - Motor Rentals - Reservations page</title>
+
 </head>
 
 <body>
     <header>
-        <div class="banner">
-            <button class="banner-close"> </button>
-            <div class="banner-title"></div>
-            <div class="banner-text"></div>
         </div>
-        <div class="theme-switch-container">
-            <label class="theme-slider" for="checkbox">
-                <input type="checkbox" id="checkbox">
-                <span class="round slider"></span>
-            </label>
-        </div>
-        <img src="images/Hurricane-Valley-logo.webp" alt="logo">
+        <img src="images/Cozumel.webp" alt="logo">
+
         <nav class="main_nav">
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
@@ -54,119 +48,122 @@
         </div>
         <button id="menu"></button>
     </header>
-
-    <div class="card">
-    <h1>Rental Agreement Information</h1>
-        <article>
-            <p>• A $50 security deposit is required to confirm reservations.</p>
-            <p>• A valid drivers license is required in hand at the time of rental.</p>
-            <p>• No one under the age of 12 years of age are allowed to ride on the scooters.</p>
-            <p>• Fuel charge is not included.</p>
-            <p>• Unlimited mileage.</p>
-            <p>• Liability insurance is included.</p>
-            <p>• Damage insurance is available for purchase.</p>
-            <p>• Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
-            <p>• Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</p>
-            <p>• Rentals may be returned to either physical location.</p>
-        </article>
-    </div>
-    <main class="form-main">
-        <div class="formWrapper">
-            <div id="formmessage"></div>
-            <h1>Rental Agreement Details</h1>
-            <fieldset>
-            <form action="confirmation.html" method="GET" class="form1">
-                <label>Today's Date <input type="date" id="today" name="today" ></label>
-                <label>First Name* <input type="text" name="fname" id="fname" required></label>
-                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
-                <label>Password* <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{7,}"></label>
-                <label>Phone*<input type="tel" name="phone" placeholder="1235551234"></label>
-                <label>Email* <input type="email" id="email" name="email" title="A valid byui.edu email address."
-                    placeholder="someone@byui.edu" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
-                </fieldset>
-
+    <main>
+        <div class="rental">
+            <h2>Rental Agreement Information</h2>
+            <article>
+                <p>• A $50 security deposit is required to confirm reservations.</p>
+                <p>• A valid drivers license is required in hand at the time of rental.</p>
+                <p>• No one under the age of 12 years of age are allowed to ride on the scooters.</p>
+                <p>• Fuel charge is not included.</p>
+                <p>• Unlimited mileage.</p>
+                <p>• Liability insurance is included.</p>
+                <p>• Damage insurance is available for purchase.</p>
+                <p>• Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
+                <p>• Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</p>
+                <p>• Rentals may be returned to either physical location.</p>
+            </article>
+        </div>
+        <div class="form-main"> 
+            <div class="formWrapper">
+                <div id="formmessage"></div>
+                <h2>Rental Agreement Details</h2>
                 <fieldset>
-                <legend>Rental Period</legend>
-                <label>Beginning Date <input type="date" id="start" name="trip-start" ></label>
-                <label>End Date <input type="date" id="end" name="trip-end"></label>
-                </fieldset>
-                <fieldset>
-                    <legend>Rental Type</legend>
-                    <div>Scooters</div>
-                    <label><input type="radio" name="audiance" value="Honda Metropolitan (49cc)">Honda Metropolitan (49cc)</label>
-                    <label><input type="radio" name="audiance" value="Honda Dio (110cc)">Honda Dio (110cc)</label>
-                    <label><input type="radio" name="audiance" value="Honda PCX150 (149cc)">Honda PCX150 (149cc)</label>
-                    <label>Number of Rentals <input type="number" name="authors"></label>
-                    <hr>
+                <form action="confirmation.html" method="GET" class="form1">
+                    <label>Today's Date <input type="date" id="today" name="today" ></label>
+                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label>Password* <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{7,}"></label>
+                    <label>Phone*<input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label>Email* <input type="email" id="email" name="email" title="A valid byui.edu email address."
+                        placeholder="someone@byui.edu" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+                    </fieldset>
 
-                    <div>Side-by-side ATV's</div>
-                    <label><input type="radio" name="audiance" value="Honda Pioneer 1000">Honda Pioneer 1000</label>
-                    <label>Number of Rentals <input type="number" name="authors"></label>
-                    <hr>
+                    <fieldset>
+                    <legend>Rental Period</legend>
+                    <label>Beginning Date <input type="date" id="start" name="trip-start" ></label>
+                    <label>End Date <input type="date" id="end" name="trip-end"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Rental Type</legend>
+                        <div>Scooters</div>
+                        <label><input type="radio" name="audiance" value="Honda Metropolitan (49cc)">Honda Metropolitan (49cc)</label>
+                        <label><input type="radio" name="audiance" value="Honda Dio (110cc)">Honda Dio (110cc)</label>
+                        <label><input type="radio" name="audiance" value="Honda PCX150 (149cc)">Honda PCX150 (149cc)</label>
+                        <label>Number of Rentals <input type="number" name="authors"></label>
+                        <hr>
 
-                    <div>Jeeps</div>
-                    <label><input type="radio" name="audiance" value="Jeep Wrangler - 4 door manuel with A/C">Jeep Wrangler - 4 door manuel with A/C </label>
-                    <label><input type="radio" name="audiance" value="Jeep Wrangler - 2 door - open air - manuel">Jeep Wrangler - 2 door - open air - manuel</label>
-                    <label>Number of Rentals <input type="number" name="authors"></label>
-                </fieldset>
+                        <div>Side-by-side ATV's</div>
+                        <label><input type="radio" name="audiance" value="Honda Pioneer 1000">Honda Pioneer 1000</label>
+                        <label>Number of Rentals <input type="number" name="authors"></label>
+                        <hr>
 
-                <fieldset>
-                    <label>Cruise Line
-                        <select name="subject">
-                            <option value="">Please Select &#9662;</option>
-                            <option value="Royal">Royal Caribbean</option>
-                            <option value="Oceania">Oceania</option>
-                            <option value="Celebrity">Celebrity</option>
-                            <option value="Viking">Viking Ocean</option>
-                            <option value="Seabourn">Seabourn</option>
-                            <option value="Regent">Regent Seven Seas</option>
-                            <option value="Silversea">Silversea</option>
-                            <option value="Costa">Costa</option>
-                            <option value="N/A">N/A</option>
-                        </select>
-                    </label>
-                    <label>Home Country
-                        <select name="subject">
-                            <option value="">Please Select &#9662;</option>
-                            <option value="Afganistan">Afganistan</option>
-                            <option value="Albania">Albania</option>
-                            <option value="Algeria">Algeria</option>
-                            <option 
-                            value="Andorra">Andorra </option>
-                            <option value="Argentina">Argentina</option>
-                            <option value="Bahamas">Bahamas</option>
-                            <option value="Barbados">Barbados</option>
-                            <option value="Brazil">Brazil</option>
-                            <option 
-                            value="Bulgaria">Bulgaria</option>
-                            <option value="Cambodia">Cambodia</option>
-                            <option value="Chile">Chile</option>
-                            <option value="China">China</option>
-                            <option value="Croatia">Croatia</option>
-                            <option value="Dominican">Dominican Republic</option>
-                            <option value="Egypt">Egypt</option>
-                            <option value="El Salvador">El Salvador</option>
-                            <option value="France">France</option>
-                            <option value="Germany">Germany</option>
-                            <option value="Greece">Greece</option>
-                            <option value="USA">United States of America</option>
-                        </select>
-                    </label>
-                </fieldset>
+                        <div>Jeeps</div>
+                        <label><input type="radio" name="audiance" value="Jeep Wrangler - 4 door manuel with A/C">Jeep Wrangler - 4 door manuel with A/C </label>
+                        <label><input type="radio" name="audiance" value="Jeep Wrangler - 2 door - open air - manuel">Jeep Wrangler - 2 door - open air - manuel</label>
+                        <label>Number of Rentals <input type="number" name="authors"></label>
+                    </fieldset>
 
-                <fieldset>
-                    <label>Special Accomodations or Comments<textarea name="description" id="description" required></textarea></label>
-                </fieldset>
+                    <fieldset>
+                        <label>Cruise Line
+                            <select name="subject">
+                                <option value="">Please Select &#9662;</option>
+                                <option value="Royal">Royal Caribbean</option>
+                                <option value="Oceania">Oceania</option>
+                                <option value="Celebrity">Celebrity</option>
+                                <option value="Viking">Viking Ocean</option>
+                                <option value="Seabourn">Seabourn</option>
+                                <option value="Regent">Regent Seven Seas</option>
+                                <option value="Silversea">Silversea</option>
+                                <option value="Costa">Costa</option>
+                                <option value="N/A">N/A</option>
+                            </select>
+                        </label>
+                        <label>Home Country
+                            <select name="subject">
+                                <option value="">Please Select &#9662;</option>
+                                <option value="Afganistan">Afganistan</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option 
+                                value="Andorra">Andorra </option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Brazil">Brazil</option>
+                                <option 
+                                value="Bulgaria">Bulgaria</option>
+                                <option value="Cambodia">Cambodia</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Dominican">Dominican Republic</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="France">France</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Greece">Greece</option>
+                                <option value="USA">United States of America</option>
+                            </select>
+                        </label>
+                    </fieldset>
 
-                <button id="btnSubmit" type="submit">Rent Now</button>
-            </form>
+                    <fieldset>
+                        <label>Special Accomodations or Comments
+                            <textarea name="description" id="description" required></textarea>
+                        </label>
+                    </fieldset>
+
+                    <button id="btnSubmit" type="submit">Rent Now</button>
+                </form>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="footer-container">
             <div>
-                <img src="images/Hurricane-Valley-logo.webp" alt="logo">
+                <img src="images/Cozumel.webp" alt="logo">
             </div>
             <section>
                 <h3>Contact Information:</h3>
@@ -180,13 +177,7 @@
             <p>&copy; Danielle Ipson | Final Project for WDD230 | 2024
         </div>
     </footer>
-    <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/banner.js"></script>
-    <script src="scripts/spotlight.js"></script>
 </body>
 </html>
 

@@ -17,11 +17,21 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <title>Scoots - Motor Rentals - Home page</title>
+
 </head>
 
 <body>
     <header>
-        <img src="images/Hurricane-Valley-logo.webp" alt="logo">
+
+        <div class="hightemp">
+            <button class="tempbutton"></button>
+            <div class="tempbutton-title"></div>
+            <div class="tempbutton-text"></div>
+        </div>
+
+        <img src="images/Cozumel.webp" alt="logo">
 
         <nav class="main_nav">
             <ul class="navigation">
@@ -31,9 +41,6 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-
-        <button id="menu"></button>
-
         <div class="hero-image"> 
             <picture>
                 <source media="(max-width: 500px)" srcset="images/pier-sm.webp">
@@ -50,12 +57,66 @@
         </div>
         <button id="menu"></button>
     </header>
+
     <main>
-        <div class="hightemp">
-            <button class="tempbutton"></button>
-            <p>The high temperature today is a perfect</p>
+        
+        <div class="content">
+            
+            <div class="card">
+                
+                <div class="front">
+                    <h1 class="heading">Scooters</h1>
+                    <p>3 different selections of Honda Motor Scooters.</p>
+                    <img src="https://danielleipson.github.io/wdd230/Scoots/images/Honda-pcx.webp" width="400px">
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Honda Metropolitan (49CC) - Seats 1 person</p>
+                        <p>Honda Dio (110cc) - Seats 2 people</p>
+                        <p>Honda PCX150 (149cc) - Seats 2 people</p>
+                        <form action="reservations.html" method="get">
+                            <button>More Information</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="front">
+                    <h1 class="heading">Side-by-Side ATVs</h1>
+                    <p>The Honda Pioneer ATV.</p>
+                    <img src="https://danielleipson.github.io/wdd230/Scoots/images/Honda-pioneer-100.webp" width="400px">
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Honda Pioneer 1000 - Seats 4 people</p>
+                        <form action="reservations.html" method="get">
+                            <button>More Information</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="card">
+                <div class="front" >
+                    <h1 class="heading">Jeeps</h1>
+                    <p>2 different selections of Jeeps.</p>
+                    <img src="https://danielleipson.github.io/wdd230/Scoots/images/jeep-wrangler.webp" width="400px">
+                </div>
+                <div class="back">
+                    <div>
+                        <p>Jeep Wrangler - Seats 5 people - 4 door - manuel - A/C</p>
+                        <p>Jeep Wrangler - Seats 4 people - 2 door - manuel- Open Air</p>
+                        <form action="reservations.html" method="get">
+                            <button>More Information</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card">
+
+       <!-- <div class="card">
             <div>
                 <h2>Scooters</h2>
                 <img src="images/Honda-pcx.webp" alt="Rentable Scooters">
@@ -65,7 +126,8 @@
                 </form>
 
             </div>
-            <div>
+            
+            <div class="card">
                 <h2>ATVs</h2>
                 <img src="images/Honda-pioneer.webp" alt="Rentable Pioneers">
                 <p>The Honda Pioneer seats 4 persons.</p>
@@ -73,7 +135,8 @@
                     <button>More Information</button>
                 </form>
             </div>
-            <div>
+
+            <div class="card">
                 <h2>Jeeps</h2>
                 <img src="images/jeep-wrangler.webp" alt="Rentable Jeeps">
                 <p>2 or 4 door option for the Jeeps.</p>
@@ -81,7 +144,7 @@
                     <button>More Information</button>
                 </form>
             </div>
-        </div>
+        </div>-->
         <div id="weather">
 
         </div>
@@ -90,7 +153,7 @@
     <footer>
         <div class="footer-container">
             <div>
-                <img src="images/Hurricane-Valley-logo.webp" alt="logo">
+                <img src="images/Cozumel.webp" alt="logo">
             </div>
             <section>
                 <h3>Contact Information:</h3>
