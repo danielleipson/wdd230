@@ -43,12 +43,12 @@
             <div class="hero-text">
                 <h1>Scoots</h1>
                 <p>Motor Scooter Rentals</p>
-                <form action="reservations.html" method="get">
+                <form action="reservations.html" method="get" name="Reserve Now">
                     <button>Reserve Now!</button>
                 </form>
             </div>
         </div>
-        <button id="menu"></button>
+        <button id="menu" name="Menu"></button>
     </header>
     <main>
         <section>
@@ -67,9 +67,13 @@
                         <label>Comments<textarea name="description" id="description" required></textarea></label>
                         <input type="hidden" name="timestamp" id="timestamp">
                         <input class="submitBtn" type="submit" value="Thank you!">
+                    </fieldset>
+                </div>
+            </form>
         </section>
-        <p style="text-align:center"></p>    
+        <div class="google-maps"> 
         <iframe src="https://www.google.com/maps/d/embed?mid=1QUUgykSPbC9Mmb1Pm1udU7XZl7WTrM8&ehbc=2E312F&noprof=1" width="720" height="480" allowfullscreen loading="lazy"></iframe>
+        </div> 
 
     </main>
     <footer>
