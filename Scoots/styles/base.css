@@ -141,7 +141,7 @@ main h2 {
 .hightemp {
     display: block;
     padding: 1em;
-    background-color: #c5A483;
+    background: linear-gradient(25deg, #e27887, #e29578, #ffddd2 );
     color: var(--black);
     border: 1px solid #f5c6cb;
     margin: 1em 0;
@@ -309,6 +309,43 @@ main h2 {
 .card p {
     text-align: center;
     color: var(--text-color);
+}
+section h1 {
+    text-align: center;
+}
+/* Rental Table */
+#table-container {
+    max-width:fit-content;
+	margin: 10px auto;
+	border: thin solid #000;
+	box-shadow: 0 5px 8px 1px #000;
+	border-collapse: collapse;
+}
+
+tr:first-child th, .highlight {
+	background-color: var(--pink);
+	/*color: var(--forelight);*/
+    color:var(--black);
+    font-size:small;
+}
+
+th, td {
+	padding: 7px 5px;
+	border: 1px solid #432818;
+}
+
+th {
+	background-color: var(--xtralightblue);
+	font-size: smaller;
+}
+
+td {
+	text-align: center;
+    font-size:smaller;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #fff99b;
 }
 
 /*Form Styling*/

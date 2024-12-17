@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Create the header row
         const headerRow = document.createElement('tr');
-        const headers = ['Rental Tye', 'Max Persons', 'Half-Day (3hrs)', 'Full-Day', 'Half-Day (3hrs)', 'Full-Day'];
+        const headers = ['Rental Type', 'Max Persons', 'Half-Day (3hrs)', 'Full-Day', 'Half-Day (3hrs)', 'Full-Day'];
 
         headers.forEach(headerText => {
             const th = document.createElement('th');
