@@ -24,7 +24,6 @@
 
 <body>
     <header>
-        </div>
         <img src="images/Cozumel.webp" alt="logo">
 
         <nav class="main_nav">
@@ -68,21 +67,21 @@
             <div class="formWrapper">
                 <div id="formmessage"></div>
                 <h2>Rental Agreement Details</h2>
-                <fieldset>
+                
                 <form action="confirmation.html" method="GET" class="form1">
-                    <label>Today's Date <input type="date" id="today" name="today" ></label>
-                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
-                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
-                    <label>Password* <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{7,}"></label>
-                    <label>Phone*<input type="tel" name="phone" placeholder="1235551234"></label>
-                    <label>Email* <input type="email" id="email" name="email" title="A valid byui.edu email address."
-                        placeholder="someone@byui.edu" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+                    <fieldset>
+                        <label>Today's Date <input type="date" id="today" name="today" ></label>
+                        <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                        <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                        <label>Password* <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{7,}"></label>
+                        <label>Phone*<input type="tel" name="phone" placeholder="1235551234"></label>
+                        <label>Email* <input type="email" id="email" name="email" title="A valid byui.edu email address." placeholder="someone@byui.edu" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
                     </fieldset>
 
                     <fieldset>
-                    <legend>Rental Period</legend>
-                    <label>Beginning Date <input type="date" id="start" name="trip-start" ></label>
-                    <label>End Date <input type="date" id="end" name="trip-end"></label>
+                        <legend>Rental Period</legend>
+                        <label>Beginning Date <input type="date" id="start" name="trip-start" ></label>
+                        <label>End Date <input type="date" id="end" name="trip-end"></label>
                     </fieldset>
                     <fieldset>
                         <legend>Rental Type</legend>
@@ -90,17 +89,16 @@
                         <label><input type="radio" name="audiance" value="Honda Metropolitan (49cc)">Honda Metropolitan (49cc)</label>
                         <label><input type="radio" name="audiance" value="Honda Dio (110cc)">Honda Dio (110cc)</label>
                         <label><input type="radio" name="audiance" value="Honda PCX150 (149cc)">Honda PCX150 (149cc)</label>
-                        <label>Number of Rentals <input type="number" name="authors"></label>
                         <hr>
 
                         <div>Side-by-side ATV's</div>
                         <label><input type="radio" name="audiance" value="Honda Pioneer 1000">Honda Pioneer 1000</label>
-                        <label>Number of Rentals <input type="number" name="authors"></label>
                         <hr>
 
                         <div>Jeeps</div>
                         <label><input type="radio" name="audiance" value="Jeep Wrangler - 4 door manuel with A/C">Jeep Wrangler - 4 door manuel with A/C </label>
                         <label><input type="radio" name="audiance" value="Jeep Wrangler - 2 door - open air - manuel">Jeep Wrangler - 2 door - open air - manuel</label>
+                        <hr>
                         <label>Number of Rentals <input type="number" name="authors"></label>
                     </fieldset>
 
@@ -120,7 +118,7 @@
                             </select>
                         </label>
                         <label>Home Country
-                            <select name="subject">
+                            <select name="country">
                                 <option value="">Please Select &#9662;</option>
                                 <option value="Afganistan">Afganistan</option>
                                 <option value="Albania">Albania</option>

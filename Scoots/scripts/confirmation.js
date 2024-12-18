@@ -20,6 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("rentalType").textContent = getValue("audiance");
         document.getElementById("numRentals").textContent = getValue("authors");
         document.getElementById("cruiseLine").textContent = getValue("subject");
-        document.getElementById("homeCountry").textContent = getValue("subject");
+        document.getElementById("homeCountry").textContent = getValue("country");
         document.getElementById("description").textContent = getValue("description");
       });

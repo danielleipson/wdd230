@@ -1,47 +1,4 @@
-@media (min-width:/*1024*/920px) {
-      
-    .grid-container, #spotlight {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    #join-main {
-        grid-template-columns: 1fr 1fr;
-        gap:10px;
-    }
-    
-    #banner {
-        height: 100px;
-        background-color:coral;
-        width: 85%;
-        text-align: center;
-        position: fixed;
-        top: 115px;
-        left: 50%;
-        margin-left: -42.5%;
-        z-index: 1;
-    }
-
-    .banner hr {
-        width: 60%;
-        margin: 0 auto;
-        border: 1px solid black;
-    }
-    
-    .banner-close {
-        width: 30px;
-        height: 30px;
-        background-color: transparent;
-        border: none;
-        position: absolute;
-        top: 0px;
-        left: 5px;
-    }
-    
-    .banner-close::after {
-        content: "✖"
-    }
-    
+@media (min-width:/*1024*/920px) {    
     .footer-container {
         display: grid;
         grid-template-columns: 1fr 1fr ;
@@ -54,10 +11,6 @@
 
     .content {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .card article {
-        padding:20px;
     }
     
     .hero-image img {

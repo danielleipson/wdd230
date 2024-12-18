@@ -126,7 +126,7 @@ nav {
 
  /* Main content of website */
   
- main {
+main {
     max-width:100%;
     margin:auto 20px;
     box-shadow: 0 1px 30px 1px #000000;
@@ -232,6 +232,7 @@ main h2 {
   .card {
     cursor: pointer;
     width: calc(90% - 2rem);
+    min-width: 300px;
     max-width: 300px;
     height: 400px;
     perspective: 1000px;
@@ -314,19 +315,28 @@ section h1 {
     text-align: center;
 }
 /* Rental Table */
+.rental-prices {
+    overflow-x:auto;
+}
+
 #table-container {
-    max-width:fit-content;
+    /*max-width:fit-content;*/
+    
 	margin: 10px auto;
-	border: thin solid #000;
-	box-shadow: 0 5px 8px 1px #000;
+	/*border: thin solid #000;
+	box-shadow: 0 5px 8px 1px #000;*/
 	border-collapse: collapse;
+}
+
+#table-container table{
+    margin:auto auto;
 }
 
 tr:first-child th, .highlight {
 	background-color: var(--pink);
 	/*color: var(--forelight);*/
     color:var(--black);
-    font-size:small;
+    font-size:smaller;
 }
 
 th, td {
@@ -434,26 +444,11 @@ input, textarea, select, button {
     margin-left:10px;
 }
 
-#rangevalue {
-    color: var(--text-color);
-    margin-top: 2%;
-
-}
-
-#r {
-    margin-top: 10px;
-    width: 100%;
-}
-
-
 .rental h2 {
     background-color: var(--pink);
     width:100%;
 }
 
-.rental article {
-    margin:15px;
-}
 
 #weather {
     max-width: 90%;
@@ -488,7 +483,7 @@ input, textarea, select, button {
 
 
 .social img {
-    width: 2em;
+    width: 1.5em;
 }
 
 .social {
@@ -535,10 +530,6 @@ footer p {
 .copyright p {
     margin-top: 30px;
     margin-bottom: 20px;
-}
-
-footer #lastM {
-    color: var(--white);
 }
 
 @media (min-width:760px) {
