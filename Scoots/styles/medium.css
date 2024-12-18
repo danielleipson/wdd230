@@ -33,4 +33,8 @@
         border: thin solid #000;
         box-shadow: 0 5px 8px 1px #000;
     }
+
+    .social img {
+        width: 2em;
+    }
 }
