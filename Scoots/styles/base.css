@@ -10,7 +10,7 @@ body {
 
 header {
     margin:auto;
-    background:linear-gradient(75deg, #006d77, #0094a1,#83c5be, #edf6f9 );
+    background:linear-gradient(180deg, #0094a1,#83c5be, #edf6f9 );
     color: var(--white);
 }
 
@@ -120,7 +120,7 @@ nav {
     border-radius: 8px;
     padding: 10px;
     background-color:var(--tangerine);
-    color:var(--white);
+    color:var(--black);
     cursor:pointer;
 }
 
@@ -269,8 +269,9 @@ main h2 {
   }
   
   .card .front {
-    background:linear-gradient(35deg, #0094a1,#83c5be, #edf6f9 );
+    background-color:#edf6f9;
     color: var(--black);
+    font-weight: bolder;
   }
   
   .card:hover .front {
@@ -278,9 +279,10 @@ main h2 {
   }
   
   .card .back {
-    background:linear-gradient(75deg, #0094a1,#83c5be, #edf6f9 );
+    background-color: #edf6f9;
     transform: rotateY(-180deg);
     color: #000;
+    font-weight: bolder;
   }
   
   .card:hover .back {
@@ -493,9 +495,10 @@ input, textarea, select, button {
 
 
 footer {
-    background:linear-gradient(75deg, #006d77, #0094a1,#83c5be, #edf6f9 );
+    background:linear-gradient(180deg, #0094a1,#83c5be, #edf6f9 );
     text-align: center;
     color: var(--black);
+    font-weight: bolder;
     padding: 5px;
     margin-top: 30px;
 }
@@ -525,11 +528,13 @@ footer img {
 footer p {
     margin:0;
     font-size: 0.875rem;
+    font-weight: bold;
 }
 
 .copyright p {
     margin-top: 30px;
     margin-bottom: 20px;
+    font-weight: bolder;
 }
 
 @media (min-width:760px) {
